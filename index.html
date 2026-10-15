@@ -1,0 +1,796 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Yılmazcan Sayın · Account Management & Business Development</title>
+<meta name="description" content="Account management and business development in B2B software, CRM and public-sector services, plus AI-built tools like CRM+ and AgentSpace. Based in Ankara.">
+<meta name="author" content="Yılmazcan Sayın">
+<meta name="theme-color" content="#f6f7fb" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#0f141d" media="(prefers-color-scheme: dark)">
+<link rel="canonical" href="https://yilmazcansayin.github.io/">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<meta property="og:type" content="profile">
+<meta property="og:title" content="Yılmazcan Sayın">
+<meta property="og:description" content="Account management and business development in B2B software, CRM and public-sector services, plus AI-built tools like CRM+ and AgentSpace. Based in Ankara.">
+<meta property="og:image" content="https://yilmazcansayin.github.io/media/og.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:locale" content="en_US">
+<meta property="og:locale:alternate" content="tr_TR">
+<meta property="og:url" content="https://yilmazcansayin.github.io/">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Yılmazcan Sayın">
+<meta name="twitter:description" content="Account management and business development in B2B software, CRM and public-sector services, plus AI-built tools like CRM+ and AgentSpace. Based in Ankara.">
+<meta name="twitter:image" content="https://yilmazcansayin.github.io/media/og.png">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"Person","name":"Yılmazcan Sayın","jobTitle":"Business Development & Operations Manager","worksFor":{"@type":"Organization","name":"Gü-Çan Turizm","url":"https://gucanturizm.com.tr"},"alumniOf":{"@type":"CollegeOrUniversity","name":"Bilkent University"},"address":{"@type":"PostalAddress","addressLocality":"Ankara","addressCountry":"TR"},"email":"mailto:sayin.yilmazcan@gmail.com","telephone":"+90 534 440 44 05","sameAs":["https://www.linkedin.com/in/yilmazcan-sayin"],"knowsLanguage":["tr","en"],"url":"https://yilmazcansayin.github.io/"}</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Sora:wght@500;600;700&family=Nunito+Sans:opsz,wght@6..12,400;6..12,600;6..12,700&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<style>
+/* Layout: a calm one-page portfolio in EN / TR. The career is a vertical journey that fills in as you
+   scroll; its colours (navy = sales, gold = operations, teal = AI builds) carry through every section.
+   Work is shown through real screenshots and the AgentSpace film, with short captions. */
+:root {
+  --bg: #f6f7fb;
+  --paper: #ffffff;
+  --ink: #18223a;
+  --muted: #5f6b80;
+  --rule: #e4e8f0;
+  --sales: #3563a8;
+  --ops: #bd8630;
+  --ai: #22887a;
+  --edu: #7d8899;
+  --sales-t: #eaf0fa;
+  --ops-t: #faf2e4;
+  --ai-t: #e4f4f1;
+  --edu-t: #eef0f4;
+  --shadow: 0 1px 2px rgba(24, 34, 58, .04), 0 14px 36px -14px rgba(24, 34, 58, .14);
+  --night: #131927;
+  --display: "Sora", "Segoe UI", system-ui, sans-serif;
+  --body: "Nunito Sans", system-ui, -apple-system, "Segoe UI", sans-serif;
+  --mono: "IBM Plex Mono", ui-monospace, Consolas, monospace;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg: #0f141d; --paper: #161d2a; --ink: #e8edf5; --muted: #9ba8ba; --rule: #263143;
+    --sales: #80aaea; --ops: #e5b768; --ai: #4fc4b1; --edu: #98a3b3;
+    --sales-t: #1b2a42; --ops-t: #2e2617; --ai-t: #15312d; --edu-t: #1f2633;
+    --shadow: 0 1px 2px rgba(0,0,0,.3), 0 18px 40px -18px rgba(0,0,0,.65);
+    --night: #0b0f17;
+    color-scheme: dark;
+  }
+}
+:root[data-theme="dark"] {
+  --bg: #0f141d; --paper: #161d2a; --ink: #e8edf5; --muted: #9ba8ba; --rule: #263143;
+  --sales: #80aaea; --ops: #e5b768; --ai: #4fc4b1; --edu: #98a3b3;
+  --sales-t: #1b2a42; --ops-t: #2e2617; --ai-t: #15312d; --edu-t: #1f2633;
+  --shadow: 0 1px 2px rgba(0,0,0,.3), 0 18px 40px -18px rgba(0,0,0,.65);
+  --night: #0b0f17;
+  color-scheme: dark;
+}
+
+* { box-sizing: border-box; }
+html { color-scheme: light; -webkit-text-size-adjust: 100%; }
+body { margin: 0; }
+[hidden] { display: none !important; }
+html { scroll-behavior: smooth; }
+body { background: var(--bg); color: var(--ink); font-family: var(--body); font-size: 1.0625rem; line-height: 1.6; -webkit-font-smoothing: antialiased; overflow-x: hidden; }
+@media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } *, *::before, *::after { animation: none !important; transition: none !important; } }
+a { color: inherit; }
+:focus-visible { outline: 2.5px solid var(--sales); outline-offset: 3px; border-radius: 8px; }
+h1, h2, h3 { margin: 0; font-family: var(--display); text-wrap: balance; letter-spacing: -.015em; }
+p { margin: 0; }
+img, video { max-width: 100%; }
+svg.i { fill: none; stroke: currentColor; stroke-width: 1.8; stroke-linecap: round; stroke-linejoin: round; }
+
+.wrap { max-width: 1160px; margin: 0 auto; padding-inline: 24px; position: relative; }
+.sec { padding-block: 104px 0; }
+.kicker { font: 500 .74rem var(--mono); letter-spacing: .14em; text-transform: uppercase; color: var(--muted); display: block; margin-bottom: 12px; }
+.sec-head { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 420px); gap: 16px 48px; align-items: end; margin-bottom: 40px; }
+.sec-head.center { grid-template-columns: minmax(0, 1fr); text-align: center; justify-items: center; }
+.sec-head h2 { font-size: clamp(1.9rem, 3.6vw, 2.6rem); font-weight: 600; line-height: 1.12; }
+.sec-head p { color: var(--muted); }
+.card { background: var(--paper); border-radius: 22px; box-shadow: var(--shadow); border: 1px solid var(--rule); }
+
+/* soft colour wash behind the hero */
+/* gradients fade to nothing on every side, so there is no visible edge */
+.wash { position: absolute; top: 0; left: 50%; width: 100vw; height: 820px; transform: translateX(-50%); pointer-events: none; z-index: 0;
+  background:
+    radial-gradient(520px 380px at 18% 30%, var(--sales-t), transparent 72%),
+    radial-gradient(460px 360px at 84% 18%, var(--ops-t), transparent 72%),
+    radial-gradient(480px 360px at 62% 72%, var(--ai-t), transparent 72%);
+  -webkit-mask-image: linear-gradient(180deg, #000 55%, transparent);
+  mask-image: linear-gradient(180deg, #000 55%, transparent); }
+.top, .hero { position: relative; z-index: 1; }
+
+/* ---------- Header ---------- */
+.top { display: flex; justify-content: space-between; align-items: center; gap: 16px; padding-block: 22px; }
+.brand { display: flex; align-items: center; gap: 12px; font-family: var(--display); font-weight: 600; font-size: .98rem; }
+.avatar { width: 40px; height: 40px; border-radius: 50%; display: grid; place-items: center; background: conic-gradient(from 210deg, var(--sales), var(--ai), var(--ops), var(--sales)); }
+.avatar span { width: 34px; height: 34px; border-radius: 50%; background: var(--ink); display: grid; place-items: center; color: var(--bg); font: 600 .8rem var(--display); }
+.top-r { display: flex; align-items: center; gap: 26px; }
+.top nav { display: flex; gap: 24px; font-size: .95rem; }
+.top nav a { text-decoration: none; color: var(--muted); }
+.top nav a:hover { color: var(--ink); }
+.lang { display: inline-flex; padding: 3px; border-radius: 999px; background: var(--paper); border: 1px solid var(--rule); box-shadow: var(--shadow); }
+.lang button { font: 600 .8rem var(--mono); letter-spacing: .06em; padding: 6px 12px; border: 0; border-radius: 999px; background: transparent; color: var(--muted); cursor: pointer; }
+.lang button[aria-pressed="true"] { background: var(--ink); color: var(--bg); }
+
+/* ---------- Hero ---------- */
+.hero { display: grid; grid-template-columns: minmax(0, 1.35fr) minmax(0, .85fr); gap: 48px; align-items: center; padding-block: 60px 12px; }
+.hero h1 { font-size: clamp(2.7rem, 6.2vw, 4.8rem); font-weight: 700; line-height: 1.02; letter-spacing: -.035em; }
+.hero h1 .soft { display: block; font-weight: 500; background: linear-gradient(90deg, var(--sales), var(--ai) 55%, var(--ops)); -webkit-background-clip: text; background-clip: text; color: transparent; padding-bottom: .08em; }
+.hero .lead { margin-top: 22px; font-size: 1.2rem; color: var(--muted); max-width: 38ch; }
+.hero .lead b { color: var(--ink); font-weight: 600; }
+.cta { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 30px; }
+.btn { font: 600 .98rem var(--body); padding: 12px 22px; border-radius: 999px; border: 1.5px solid var(--rule); background: var(--paper); color: var(--ink); text-decoration: none; cursor: pointer; display: inline-flex; align-items: center; gap: 8px; transition: transform .15s, box-shadow .15s; }
+.btn:hover { transform: translateY(-1px); box-shadow: var(--shadow); }
+.btn.solid { background: var(--ink); border-color: var(--ink); color: var(--bg); }
+/* "At a glance": a short background summary, one coloured dot per strand of the career */
+.glance { background: var(--paper); border: 1px solid var(--rule); border-radius: 24px; box-shadow: var(--shadow); padding: 26px 26px 20px; }
+.glance h2 { font-size: 1.05rem; font-weight: 600; letter-spacing: -.01em; }
+.glance dl { margin: 14px 0 0; display: flex; flex-direction: column; }
+.glance dl > div { display: grid; grid-template-columns: 92px minmax(0, 1fr); gap: 12px; align-items: baseline; padding: 11px 0; border-top: 1px solid var(--rule); }
+.glance dl > div:first-child { border-top: 0; }
+.glance dt { display: flex; align-items: center; gap: 8px; font-size: .86rem; color: var(--muted); }
+.glance dt::before { content: ""; width: 8px; height: 8px; border-radius: 50%; background: var(--c); flex-shrink: 0; }
+.glance dd { margin: 0; font-size: .95rem; font-weight: 600; line-height: 1.4; }
+.g-foot { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 14px; padding-top: 16px; border-top: 1px solid var(--rule); }
+.g-foot span { font-size: .84rem; font-weight: 600; padding: 5px 12px; border-radius: 999px; background: var(--bg); }
+.g-foot .ok { display: inline-flex; align-items: center; gap: 7px; background: var(--ai-t); color: var(--ai); }
+.g-foot .ok::before { content: ""; width: 7px; height: 7px; border-radius: 50%; background: currentColor; }
+
+/* ---------- Vertical journey ---------- */
+.legend { display: flex; gap: 18px; flex-wrap: wrap; justify-content: center; font-size: .9rem; color: var(--muted); margin-top: 6px; }
+.legend span { display: inline-flex; align-items: center; gap: 8px; }
+.legend i { width: 10px; height: 10px; border-radius: 50%; background: var(--c); }
+.tl { position: relative; margin: 0 auto; max-width: 1000px; padding-block: 8px; }
+.tl-rail, .tl-fill { position: absolute; left: 50%; width: 4px; margin-left: -2px; top: 0; border-radius: 4px; }
+.tl-rail { bottom: 0; background: var(--rule); }
+.tl-fill { height: 0; background: linear-gradient(180deg, var(--edu), var(--sales) 18%, var(--sales) 42%, var(--ops) 52%, var(--ops) 66%, var(--sales) 76%, var(--ai) 92%); transition: height .12s linear; }
+.stopx { position: relative; display: grid; grid-template-columns: minmax(0, 1fr) 76px minmax(0, 1fr); align-items: center; padding-block: 18px; }
+.stopx .when { font: 600 clamp(1.6rem, 3vw, 2.3rem)/1 var(--display); letter-spacing: -.02em; color: var(--c); opacity: .35; transition: opacity .3s; }
+.stopx .when small { display: block; font: 500 .78rem var(--mono); letter-spacing: .04em; color: var(--muted); margin-top: 8px; opacity: 1; }
+.stopx.reached .when { opacity: 1; }
+.stopx .node { justify-self: center; width: 52px; height: 52px; border-radius: 50%; background: var(--paper); border: 3px solid var(--rule); color: var(--muted); display: grid; place-items: center; position: relative; z-index: 1; transition: background .3s, border-color .3s, color .3s, box-shadow .3s; }
+.stopx .node svg { width: 22px; height: 22px; }
+.stopx.reached .node { border-color: var(--c); background: var(--c); color: #fff; box-shadow: 0 0 0 7px var(--t); }
+.stopx .box { padding: 22px 24px; border-radius: 20px; background: var(--paper); border: 1px solid var(--rule); box-shadow: var(--shadow); transition: transform .3s, border-color .3s; }
+.stopx.reached .box { border-color: color-mix(in srgb, var(--c) 35%, var(--rule)); }
+.stopx.current .box { transform: translateY(-3px); }
+.stopx .box .co { font: 600 .74rem var(--mono); letter-spacing: .1em; text-transform: uppercase; color: var(--c); }
+.stopx .box h3 { font-size: 1.15rem; font-weight: 600; margin-top: 4px; line-height: 1.3; }
+.stopx .box .meta { font-size: .92rem; color: var(--muted); margin-top: 2px; }
+.stopx.l .box { grid-column: 1; grid-row: 1; }
+.stopx.l .node { grid-column: 2; grid-row: 1; }
+.stopx.l .when { grid-column: 3; grid-row: 1; padding-left: 8px; }
+.stopx.r .when { grid-column: 1; grid-row: 1; text-align: right; padding-right: 8px; }
+.stopx.r .node { grid-column: 2; grid-row: 1; }
+.stopx.r .box { grid-column: 3; grid-row: 1; }
+.tags { display: flex; flex-wrap: wrap; gap: 7px; margin-top: 12px; }
+.tag { font-size: .84rem; padding: 4px 12px; border-radius: 999px; background: var(--bg); border: 1px solid var(--rule); white-space: nowrap; text-decoration: none; }
+a.tag { background: var(--t); border-color: transparent; color: var(--c); font-weight: 600; }
+a.tag:hover { text-decoration: underline; }
+.move { position: relative; display: grid; grid-template-columns: minmax(0, 1fr) 76px minmax(0, 1fr); align-items: center; padding-block: 6px; }
+.move .node { grid-column: 2; justify-self: center; width: 34px; height: 34px; border-radius: 50%; background: var(--paper); border: 1.5px dashed var(--muted); color: var(--muted); display: grid; place-items: center; z-index: 1; }
+.move .node svg { width: 16px; height: 16px; }
+.move span { grid-column: 3; font: 500 .8rem var(--mono); color: var(--muted); padding-left: 8px; }
+/* current workplace: always highlighted, with a pointing finger */
+.stopx.now .when { opacity: 1; }
+.stopx.now .node { border-color: var(--c); background: var(--c); color: var(--paper); animation: ring 2s infinite; }
+@keyframes ring { 0% { box-shadow: 0 0 0 0 color-mix(in srgb, var(--c) 45%, transparent); } 80%, 100% { box-shadow: 0 0 0 16px transparent; } }
+.stopx.now .box { border: 2px solid var(--c); background: linear-gradient(180deg, var(--t), var(--paper) 70%); position: relative; }
+.here { display: inline-flex; align-items: center; gap: 8px; margin-bottom: 10px; padding: 5px 12px 5px 8px; border-radius: 999px; background: var(--c); color: var(--paper); font: 700 .8rem var(--body); }
+.here svg { width: 18px; height: 18px; }
+/* the finger sits beside the year and points at the node */
+.finger { display: inline-block; vertical-align: middle; width: 40px; height: 40px; margin: 0 10px; color: var(--c); animation: nudge-l 1.4s ease-in-out infinite; }
+.finger svg { width: 40px; height: 40px; stroke-width: 1.7; }
+.stopx.r .finger { animation-name: nudge-r; }
+.stopx.r .finger svg { transform: scaleX(-1); }
+@keyframes nudge-l { 0%, 100% { translate: 0 0; } 50% { translate: -7px 0; } }
+@keyframes nudge-r { 0%, 100% { translate: 0 0; } 50% { translate: 7px 0; } }
+
+/* ---------- Results ---------- */
+.results { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 18px; }
+.res { padding: 24px; display: flex; flex-direction: column; gap: 14px; min-width: 0; }
+.res .viz { height: 74px; display: flex; align-items: flex-end; }
+.res .num { font: 600 2.5rem/1 var(--display); letter-spacing: -.03em; color: var(--c); font-variant-numeric: tabular-nums; }
+.res .num small { font-size: 1rem; font-weight: 500; color: var(--muted); margin-left: 4px; letter-spacing: 0; }
+.res p { font-size: .95rem; color: var(--muted); line-height: 1.45; }
+.res p b { color: var(--ink); font-weight: 600; }
+/* every picture uses the same 11px mark and 4px gap, so the four cards line up */
+.gv { display: grid; gap: 4px; grid-template-columns: repeat(var(--cols), 11px); grid-auto-rows: 11px; }
+.gv i { border-radius: 3px; background: var(--c); animation: pop .45s both cubic-bezier(.3,1.4,.6,1); }
+.gv.round i { border-radius: 50%; }
+.gv.tick i { background: var(--c) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 12 12'%3E%3Cpath d='M3 6.2l2 2 4-4.4' fill='none' stroke='%23fff' stroke-width='1.8' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E") center / 11px no-repeat; }
+@keyframes pop { from { transform: scale(0); } }
+.people { display: flex; align-items: flex-end; gap: 10px; }
+.people .lead { width: 30px; height: 41px; fill: var(--ink); }
+.people .crew { display: grid; grid-template-columns: repeat(5, 14px); gap: 4px 5px; }
+.people .crew svg { width: 14px; height: 19px; fill: var(--c); animation: pop .45s both cubic-bezier(.3,1.4,.6,1); }
+
+/* ---------- Sales cycle ---------- */
+.cycle { padding: 28px; }
+.cycle-scroll { overflow-x: auto; }
+.cyc { display: grid; grid-template-columns: 170px repeat(7, minmax(84px, 1fr)); min-width: 780px; }
+.cyc .h { text-align: center; padding: 0 4px 16px; display: flex; flex-direction: column; align-items: center; gap: 8px; font-size: .84rem; font-weight: 600; line-height: 1.2; position: relative; }
+.cyc .h svg { width: 21px; height: 21px; color: var(--sales); }
+.cyc .h .bub { width: 46px; height: 46px; border-radius: 50%; background: var(--sales-t); display: grid; place-items: center; position: relative; z-index: 1; }
+.cyc .h:not(.first):not(.corner)::before { content: ""; position: absolute; top: 23px; right: 50%; width: 100%; height: 2px; background: var(--rule); }
+.cyc .corner { justify-content: flex-end; align-items: flex-start; font: 500 .7rem var(--mono); letter-spacing: .12em; text-transform: uppercase; color: var(--muted); }
+.cyc .co { padding: 13px 0; border-top: 1px solid var(--rule); display: flex; align-items: center; gap: 10px; font-weight: 600; font-size: .95rem; line-height: 1.2; }
+.cyc .co i { width: 8px; height: 8px; border-radius: 50%; background: var(--c); flex-shrink: 0; }
+.cyc .co small { display: block; font: .72rem var(--mono); color: var(--muted); font-weight: 400; margin-top: 2px; }
+.cyc .cell { border-top: 1px solid var(--rule); display: grid; place-items: center; }
+.cyc .cell span { width: 22px; height: 22px; border-radius: 50%; background: var(--t); display: grid; place-items: center; }
+.cyc .cell span::after { content: ""; width: 10px; height: 10px; border-radius: 50%; background: var(--c); }
+.cyc .cell.no span { width: 6px; height: 6px; background: var(--rule); }
+.cyc .cell.no span::after { display: none; }
+
+/* ---------- AgentSpace feature (deliberately dark: it matches the product) ---------- */
+.feature { background: var(--night); color: #e9edf3; border-radius: 30px; padding: 48px; display: flex; flex-direction: column; gap: 36px; position: relative; overflow: hidden; }
+.feature::before { content: ""; position: absolute; width: 520px; height: 520px; right: -160px; top: -200px; border-radius: 50%; background: radial-gradient(circle, rgba(240,163,92,.18), transparent 65%); pointer-events: none; }
+.feature > * { position: relative; }
+.feature .kicker { color: #f0a35c; }
+.f-top { display: grid; grid-template-columns: minmax(0, .8fr) minmax(0, 1.2fr); gap: 44px; align-items: center; }
+.f-top h2 { font-size: clamp(2rem, 4vw, 2.9rem); font-weight: 700; line-height: 1.05; color: #fff; }
+.f-top p.lede { margin-top: 16px; color: #aab4c3; font-size: 1.08rem; }
+.f-points { margin: 24px 0 0; padding: 0; list-style: none; display: flex; flex-direction: column; gap: 12px; }
+.f-points li { display: grid; grid-template-columns: 34px minmax(0, 1fr); gap: 12px; align-items: center; color: #d6dce6; }
+.f-points .ic { width: 34px; height: 34px; border-radius: 10px; display: grid; place-items: center; background: rgba(240, 163, 92, .13); color: #f0a35c; }
+.f-points svg { width: 18px; height: 18px; }
+.video { border-radius: 18px; overflow: hidden; background: #000; box-shadow: 0 30px 60px -20px rgba(0,0,0,.6); border: 1px solid rgba(255,255,255,.08); }
+.video video { display: block; width: 100%; height: auto; aspect-ratio: 16 / 9; }
+.v-cap { margin-top: 10px; font: .78rem var(--mono); color: #8d98a8; }
+.strip { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 14px; }
+.shot { background: none; border: 0; padding: 0; text-align: left; color: inherit; cursor: zoom-in; display: flex; flex-direction: column; gap: 8px; font: inherit; }
+.shot img { display: block; width: 100%; height: auto; aspect-ratio: 16 / 10; object-fit: cover; object-position: top; border-radius: 14px; border: 1px solid rgba(255,255,255,.1); transition: transform .2s; }
+.shot:hover img { transform: translateY(-3px); }
+.shot b { font-size: .95rem; font-weight: 600; color: #fff; }
+.shot span { font-size: .85rem; color: #8d98a8; line-height: 1.4; }
+.f-tags { display: flex; flex-wrap: wrap; gap: 8px; }
+.f-tags span { font: .78rem var(--mono); padding: 5px 11px; border-radius: 999px; border: 1px solid rgba(255,255,255,.14); color: #c3cad5; }
+
+/* ---------- Project rows ---------- */
+.project { display: grid; grid-template-columns: minmax(0, 360px) minmax(0, 1fr); gap: 48px; align-items: start; padding-block: 72px 0; scroll-margin-top: 24px; }
+.project.first { padding-top: 0; }
+.p-info { display: flex; flex-direction: column; gap: 16px; position: sticky; top: calc(env(safe-area-inset-top, 0px) + 24px); }
+.status { align-self: flex-start; font: 500 .72rem var(--mono); letter-spacing: .08em; text-transform: uppercase; padding: 5px 12px; border-radius: 999px; color: var(--c); background: var(--t); }
+.p-info h3 { font-size: 2rem; font-weight: 700; line-height: 1.1; }
+.p-info .one { color: var(--muted); font-size: 1.08rem; }
+.feats { margin: 0; padding: 0; list-style: none; display: flex; flex-direction: column; gap: 12px; }
+.feats li { display: grid; grid-template-columns: 34px minmax(0, 1fr); gap: 12px; align-items: center; font-size: .98rem; }
+.feats .ic { width: 34px; height: 34px; border-radius: 10px; display: grid; place-items: center; background: var(--t); color: var(--c); }
+.feats svg { width: 18px; height: 18px; }
+.stack { font: .78rem var(--mono); color: var(--muted); }
+.frame { border-radius: 18px; overflow: hidden; background: var(--paper); box-shadow: var(--shadow); border: 1px solid var(--rule); }
+.frame-bar { display: flex; align-items: center; gap: 7px; padding: 11px 16px; border-bottom: 1px solid var(--rule); }
+.frame-bar i { width: 10px; height: 10px; border-radius: 50%; background: var(--rule); }
+.frame-bar span { margin-left: 10px; font: .74rem var(--mono); color: var(--muted); overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.frame img { display: block; width: 100%; height: auto; cursor: zoom-in; }
+.tabs { display: inline-flex; gap: 4px; padding: 4px; border-radius: 999px; background: var(--paper); border: 1px solid var(--rule); box-shadow: var(--shadow); margin-bottom: 16px; flex-wrap: wrap; }
+.tabs button { font: 600 .88rem var(--body); padding: 8px 16px; border-radius: 999px; border: 0; background: transparent; color: var(--muted); cursor: pointer; }
+.tabs button[aria-selected="true"] { background: var(--c); color: #fff; }
+.cap { margin-top: 12px; font-size: .92rem; color: var(--muted); }
+.cap b { font: 500 .7rem var(--mono); letter-spacing: .08em; text-transform: uppercase; color: var(--c); margin-right: 8px; }
+
+/* ---------- Toolkit ---------- */
+.kit { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 18px; }
+.kit .card { padding: 26px; }
+.kit h3 { display: flex; align-items: center; gap: 12px; font-size: 1.15rem; font-weight: 600; margin-bottom: 16px; }
+.kit h3 .ic { width: 40px; height: 40px; border-radius: 12px; display: grid; place-items: center; background: var(--t); color: var(--c); }
+.kit h3 svg { width: 19px; height: 19px; }
+.chips { display: flex; flex-wrap: wrap; gap: 8px; }
+.extra { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 18px; margin-top: 18px; }
+.extra .card { padding: 20px 24px; display: grid; grid-template-columns: 44px minmax(0, 1fr); gap: 14px; align-items: center; }
+.extra .ic { width: 44px; height: 44px; border-radius: 13px; display: grid; place-items: center; background: var(--edu-t); color: var(--ink); }
+.extra svg { width: 22px; height: 22px; }
+.extra b { display: block; font-weight: 600; }
+.extra span { font-size: .9rem; color: var(--muted); }
+
+/* ---------- Contact ---------- */
+.end { margin-block: 104px 32px; padding: 56px; display: grid; grid-template-columns: minmax(0, 1fr) auto; gap: 32px; align-items: center; position: relative; overflow: hidden; }
+.end::after { content: ""; position: absolute; right: -90px; top: -90px; width: 280px; height: 280px; border-radius: 50%; background: conic-gradient(from 200deg, var(--sales-t), var(--ai-t), var(--ops-t), var(--sales-t)); filter: blur(10px); }
+.end > * { position: relative; z-index: 1; }
+.end h2 { font-size: clamp(2rem, 4.4vw, 3rem); font-weight: 700; line-height: 1.06; }
+.end p { margin-top: 12px; color: var(--muted); max-width: 50ch; }
+.end .acts { display: flex; flex-direction: column; gap: 10px; min-width: 0; }
+.mail { font: .86rem var(--mono); color: var(--muted); user-select: all; text-align: center; overflow-wrap: anywhere; }
+footer { padding-bottom: 40px; font-size: .85rem; color: var(--muted); display: flex; justify-content: space-between; gap: 12px; flex-wrap: wrap; }
+
+/* ---------- Lightbox ---------- */
+.lb[hidden] { display: none; }
+.lb { position: fixed; inset: 0; z-index: 50; background: rgba(8, 12, 18, .86); display: grid; place-items: center; padding: 24px; cursor: zoom-out; }
+.lb img { max-height: 88vh; width: auto; border-radius: 14px; box-shadow: 0 30px 80px rgba(0,0,0,.5); }
+.lb button { position: absolute; top: calc(env(safe-area-inset-top, 0px) + 16px); right: 16px; width: 44px; height: 44px; border-radius: 50%; border: 0; background: #fff; color: #111; font-size: 1.3rem; cursor: pointer; }
+
+/* ---------- Responsive ---------- */
+@media (max-width: 980px) {
+  .hero, .f-top, .project, .sec-head { grid-template-columns: minmax(0, 1fr); }
+  .results { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .strip { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .p-info { position: static; }
+  .kit, .extra { grid-template-columns: minmax(0, 1fr); }
+  .top nav { display: none; }
+}
+@media (max-width: 720px) {
+  .wrap { padding-inline: 16px; }
+  .hero { padding-top: 28px; }
+  .tl-rail, .tl-fill { left: 26px; }
+  .stopx, .move { grid-template-columns: 52px minmax(0, 1fr); column-gap: 14px; }
+  .stopx.l .node, .stopx.r .node { grid-column: 1; grid-row: 1 / span 2; align-self: start; }
+  .stopx.l .when, .stopx.r .when { grid-column: 2; grid-row: 1; text-align: left; padding: 0 0 10px; font-size: 1.5rem; }
+  .stopx.l .box, .stopx.r .box { grid-column: 2; grid-row: 2; }
+  .stopx .when small { display: inline; margin: 0 0 0 10px; }
+  .move .node { grid-column: 1; margin-left: 9px; }
+  .move span { grid-column: 2; padding: 0; }
+  .stopx .box { padding: 18px; }
+  .stopx .finger { display: none; }
+  .results { grid-template-columns: minmax(0, 1fr); }
+  .cycle { padding: 18px; }
+  .feature { padding: 26px 18px; border-radius: 22px; }
+  .strip { grid-template-columns: minmax(0, 1fr); }
+  .sec { padding-top: 76px; }
+  .project { padding-top: 56px; }
+  .end { grid-template-columns: minmax(0, 1fr); padding: 32px 22px; }
+}
+</style>
+</head>
+<body>
+<!-- Icon sprite -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <defs>
+    <symbol id="i-cap" viewBox="0 0 24 24"><path d="M2 9l10-5 10 5-10 5z"/><path d="M6 11v5c2 2 4 3 6 3s4-1 6-3v-5"/></symbol>
+    <symbol id="i-search" viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><path d="M20 20l-4-4"/></symbol>
+    <symbol id="i-mega" viewBox="0 0 24 24"><path d="M3 10v4h4l7 4V6l-7 4z"/><path d="M18 9a4 4 0 0 1 0 6"/></symbol>
+    <symbol id="i-users" viewBox="0 0 24 24"><circle cx="9" cy="8" r="3.2"/><path d="M3 20c0-3.3 2.7-5.5 6-5.5s6 2.2 6 5.5"/><path d="M16 4.8a3.2 3.2 0 0 1 0 6.4"/><path d="M18 14.8c2 .6 3 2.3 3 5.2"/></symbol>
+    <symbol id="i-home" viewBox="0 0 24 24"><path d="M3 20h18"/><path d="M5 20V9.5L12 4l7 5.5V20"/><path d="M10 20v-5.5h4V20"/></symbol>
+    <symbol id="i-bus" viewBox="0 0 24 24"><rect x="5" y="3.5" width="14" height="13" rx="2.5"/><path d="M5 10h14"/><path d="M7.5 19.5v-3M16.5 19.5v-3"/><circle cx="8.5" cy="13.3" r=".6"/><circle cx="15.5" cy="13.3" r=".6"/></symbol>
+    <symbol id="i-chat" viewBox="0 0 24 24"><path d="M4 5h16v11H9l-5 4z"/><path d="M8 9.5h8M8 12.5h5"/></symbol>
+    <symbol id="i-doc" viewBox="0 0 24 24"><path d="M6 3h9l4 4v14H6z"/><path d="M14 3v5h5"/><path d="M9 13h6M9 17h6"/></symbol>
+    <symbol id="i-flag" viewBox="0 0 24 24"><path d="M5 21V4"/><path d="M5 4h12l-3 4 3 4H5"/></symbol>
+    <symbol id="i-plane" viewBox="0 0 24 24"><path d="M2 16l20-8-6 14-4-6z"/><path d="M12 16l10-8"/></symbol>
+    <symbol id="i-pin" viewBox="0 0 24 24"><path d="M12 21s-7-6.2-7-11.5A7 7 0 0 1 19 9.5C19 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></symbol>
+    <symbol id="i-globe" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c3 3 4 6 4 9s-1 6-4 9c-3-3-4-6-4-9s1-6 4-9z"/></symbol>
+    <symbol id="i-target" viewBox="0 0 24 24"><circle cx="12" cy="12" r="8.5"/><circle cx="12" cy="12" r="4.5"/><circle cx="12" cy="12" r=".8"/></symbol>
+    <symbol id="i-screen" viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="12" rx="2"/><path d="M8 20h8M12 16v4"/></symbol>
+    <symbol id="i-pen" viewBox="0 0 24 24"><path d="M4 20l1-4L16 5l3 3L8 19z"/><path d="M14 7l3 3"/></symbol>
+    <symbol id="i-hand" viewBox="0 0 24 24"><path d="M3 12l4-4 4 2 3-3 4 1 3 3"/><path d="M7 12l4 4c1 1 2 1 3 0l4-4"/><path d="M10 15l-2 2M13 17l-1.5 1.5"/></symbol>
+    <symbol id="i-rocket" viewBox="0 0 24 24"><path d="M12 15l-3-3c1.5-5 5-8 10-8 0 5-3 8.5-8 10z"/><path d="M9 12H5l2-4h4M12 15v4l4-2v-4"/><path d="M6 18c-1 1-1 3-1 3s2 0 3-1"/></symbol>
+    <symbol id="i-heart" viewBox="0 0 24 24"><path d="M12 20s-7.5-4.4-7.5-10A4.3 4.3 0 0 1 12 7.3 4.3 4.3 0 0 1 19.5 10c0 5.6-7.5 10-7.5 10z"/></symbol>
+    <symbol id="i-check" viewBox="0 0 24 24"><path d="M12 3l8 3.5v5.5c0 4.5-3.4 8-8 9-4.6-1-8-4.5-8-9V6.5z"/><path d="M8.5 12l2.5 2.5 4.5-5"/></symbol>
+    <symbol id="i-layers" viewBox="0 0 24 24"><path d="M12 3l9 5-9 5-9-5z"/><path d="M3 13l9 5 9-5"/></symbol>
+    <symbol id="i-brain" viewBox="0 0 24 24"><path d="M9 4a3 3 0 0 0-3 3 3 3 0 0 0-2 5 3 3 0 0 0 2 5 3 3 0 0 0 3 3h1V4z"/><path d="M15 4a3 3 0 0 1 3 3 3 3 0 0 1 2 5 3 3 0 0 1-2 5 3 3 0 0 1-3 3h-1V4z"/></symbol>
+    <symbol id="i-route" viewBox="0 0 24 24"><circle cx="6" cy="18" r="2.5"/><circle cx="18" cy="6" r="2.5"/><path d="M8.5 18H15a3 3 0 0 0 0-6H9a3 3 0 0 1 0-6h6.5"/></symbol>
+    <symbol id="i-scale" viewBox="0 0 24 24"><path d="M12 4v16M7 20h10M5 7h14"/><path d="M5 7l-3 6a3 3 0 0 0 6 0zM19 7l-3 6a3 3 0 0 0 6 0z"/></symbol>
+    <symbol id="i-mail" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></symbol>
+    <symbol id="i-lock" viewBox="0 0 24 24"><rect x="5" y="11" width="14" height="10" rx="2"/><path d="M8 11V8a4 4 0 0 1 8 0v3"/></symbol>
+    <symbol id="i-sheet" viewBox="0 0 24 24"><rect x="4" y="3" width="16" height="18" rx="2"/><path d="M4 9h16M4 15h16M10 3v18"/></symbol>
+    <symbol id="i-music" viewBox="0 0 24 24"><path d="M9 18V5l11-2v13"/><circle cx="6.5" cy="18" r="2.5"/><circle cx="17.5" cy="16" r="2.5"/></symbol>
+    <symbol id="i-spark" viewBox="0 0 24 24"><path d="M12 3l1.8 5.2L19 10l-5.2 1.8L12 17l-1.8-5.2L5 10l5.2-1.8z"/><path d="M19 15l.8 2.2L22 18l-2.2.8L19 21l-.8-2.2L16 18l2.2-.8z"/></symbol>
+    <symbol id="i-point" viewBox="0 0 24 24"><path d="M2.5 9.5H13a1.5 1.5 0 0 1 0 3h-2"/><path d="M11.5 12.5H15a1.5 1.5 0 0 1 0 3h-2"/><path d="M13.5 15.5H16a1.5 1.5 0 0 1 0 3h-3.5"/><path d="M12.5 18.5c-4 0-6-.5-7.5-2.5S6 9.5 8 8.5l3-2.5a1.5 1.5 0 0 1 2 2.2L11.5 9.5"/></symbol>
+    <symbol id="i-link" viewBox="0 0 24 24"><path d="M7 17L17 7M9 7h8v8"/></symbol>
+    <symbol id="i-copy" viewBox="0 0 24 24"><rect x="8" y="8" width="12" height="12" rx="2"/><path d="M16 8V5a1 1 0 0 0-1-1H5a1 1 0 0 0-1 1v10a1 1 0 0 0 1 1h3"/></symbol>
+    <symbol id="i-phone" viewBox="0 0 24 24"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2z"/></symbol>
+  </defs>
+</svg>
+
+<div class="wrap">
+  <div class="wash" aria-hidden="true"></div>
+  <header class="top">
+    <div class="brand"><span class="avatar" aria-hidden="true"><span>YS</span></span>Yılmazcan Sayın</div>
+    <div class="top-r">
+      <nav aria-label="Sections"><a href="#journey" data-t="nav1">Journey</a><a href="#results" data-t="nav2">Results</a><a href="#agentspace">AgentSpace</a><a href="#work" data-t="nav3">Work</a><a href="#contact" data-t="nav4">Contact</a></nav>
+      <div class="lang" role="group" aria-label="Language / Dil"><button type="button" data-lang="en" aria-pressed="true">EN</button><button type="button" data-lang="tr" aria-pressed="false">TR</button></div>
+    </div>
+  </header>
+
+  <section class="hero" aria-label="Introduction">
+    <div>
+      <span class="kicker" data-t="heroK">Account management · Business development</span>
+      <h1>Yılmazcan Sayın<span class="soft" data-t="heroSoft">sells, manages and builds.</span></h1>
+      <p class="lead" data-h="heroLead">B2B software sales and public-sector accounts, plus <b>AI-built tools</b> that make the work faster.</p>
+      <div class="cta">
+        <button class="btn solid" type="button" data-copy><svg class="i" width="18" height="18"><use href="#i-copy"/></svg><span data-t="copy">Copy email</span></button>
+        <a class="btn" href="https://www.linkedin.com/in/yilmazcan-sayin" target="_blank" rel="noopener">LinkedIn <svg class="i" width="16" height="16"><use href="#i-link"/></svg></a>
+        <a class="btn" href="tel:+905344404405"><svg class="i" width="17" height="17"><use href="#i-phone"/></svg>+90 534 440 44 05</a>
+      </div>
+    </div>
+    <aside class="glance" aria-labelledby="glanceH">
+      <h2 id="glanceH" data-t="gH">At a glance</h2>
+      <dl>
+        <div style="--c:var(--ops)"><dt data-t="g1k">Now</dt><dd data-t="g1">Business Development &amp; Operations Manager at Gü-Çan Turizm</dd></div>
+        <div style="--c:var(--sales)"><dt data-t="g2k">Sales</dt><dd data-t="g2">B2B software and CRM sales at Mikrogrup, Kommo and Vidco</dd></div>
+        <div style="--c:var(--ops)"><dt data-t="g3k">Abroad</dt><dd data-t="g3">General Manager in New Zealand hospitality</dd></div>
+        <div style="--c:var(--ai)"><dt data-t="g4k">Builds</dt><dd data-t="g4">CRM+, the company website and AgentSpace, made with AI</dd></div>
+        <div style="--c:var(--edu)"><dt data-t="g5k">Education</dt><dd data-t="g5">Bilkent University, Business Information Management</dd></div>
+      </dl>
+      <p class="g-foot"><span class="ok" data-t="ncOpen">Open to new roles</span><span>Ankara</span><span>TR · EN</span></p>
+    </aside>
+  </section>
+
+  <!-- JOURNEY -->
+  <section id="journey" class="sec">
+    <div class="sec-head center">
+      <div><span class="kicker" data-t="jK">Career journey</span><h2 data-t="jH">Scroll down through my career</h2></div>
+      <p data-t="jP">From university to today, one stop at a time.</p>
+      <div class="legend">
+        <span style="--c:var(--sales)"><i></i><span data-t="lgS">Sales &amp; accounts</span></span>
+        <span style="--c:var(--ops)"><i></i><span data-t="lgO">Operations &amp; leadership</span></span>
+        <span style="--c:var(--ai)"><i></i><span data-t="lgA">AI builds</span></span>
+        <span style="--c:var(--edu)"><i></i><span data-t="lgE">Education</span></span>
+      </div>
+    </div>
+    <div class="tl" id="tl"><div class="tl-rail"></div><div class="tl-fill" id="tlFill"></div><div id="tlItems"></div></div>
+  </section>
+
+  <!-- RESULTS -->
+  <section id="results" class="sec">
+    <div class="sec-head"><div><span class="kicker" data-t="rK">Results</span><h2 data-t="rH">What the work added up to</h2></div><p data-t="rP">Every mark in these pictures is one real unit.</p></div>
+    <div class="results">
+      <div class="card res" style="--c:var(--ops);--t:var(--ops-t)"><div class="viz"><div class="gv" id="g1" style="--cols:12" aria-hidden="true"></div></div><div class="num">36<small data-t="r1u">months</small></div><p data-h="r1"><b>TCDD contract</b>, with tender preparation led by me. One square, one month.</p></div>
+      <div class="card res" style="--c:var(--sales);--t:var(--sales-t)"><div class="viz"><div class="gv round" id="g2" style="--cols:10" aria-hidden="true"></div></div><div class="num">50+<small data-t="r2u">/ month</small></div><p data-h="r2"><b>New customers</b> acquired and onboarded at Mikrogrup.</p></div>
+      <div class="card res" style="--c:var(--ops);--t:var(--ops-t)"><div class="viz"><div class="people" id="g3" aria-hidden="true"></div></div><div class="num">10+<small data-t="r3u">people</small></div><p data-h="r3"><b>Team led</b> in New Zealand, serving 50–100 guests.</p></div>
+      <div class="card res" style="--c:var(--ai);--t:var(--ai-t)"><div class="viz"><div class="gv tick" id="g4" style="--cols:11" aria-hidden="true"></div></div><div class="num">33<small data-t="r4u">tests</small></div><p data-h="r4"><b>Automated tests</b> behind the CRM+ workspace I specified.</p></div>
+    </div>
+  </section>
+
+  <!-- SALES CYCLE -->
+  <section id="cycle" class="sec">
+    <div class="sec-head"><div><span class="kicker" data-t="cK">Sales cycle</span><h2 data-t="cH">From first call to renewal</h2></div><p data-t="cP">The stages I owned in each role.</p></div>
+    <div class="card cycle"><div class="cycle-scroll"><div class="cyc" id="cyc" role="figure" aria-label="Sales stages owned per role"></div></div></div>
+  </section>
+
+  <!-- AGENTSPACE -->
+  <section id="agentspace" class="sec">
+    <div class="feature">
+      <div class="f-top">
+        <div>
+          <span class="kicker" data-t="aK">Personal project · AI</span>
+          <h2 data-t="aH">AgentSpace, my AI office</h2>
+          <p class="lede" data-t="aL">A team of AI agents that plans, builds and double-checks real work. I designed how they work together.</p>
+          <ul class="f-points">
+            <li><span class="ic"><svg class="i"><use href="#i-users"/></svg></span><span data-t="a1">One manager agent and five specialists</span></li>
+            <li><span class="ic"><svg class="i"><use href="#i-scale"/></svg></span><span data-t="a2">The right model and effort for each task</span></li>
+            <li><span class="ic"><svg class="i"><use href="#i-check"/></svg></span><span data-t="a3">Independent review before anything is accepted</span></li>
+            <li><span class="ic"><svg class="i"><use href="#i-brain"/></svg></span><span data-t="a4">A second-brain knowledge base as memory</span></li>
+          </ul>
+        </div>
+        <div>
+          <div class="video">
+            <video controls playsinline preload="metadata" poster="media/as-cover.webp" width="1280" height="720" aria-label="AgentSpace product tour">
+              <source src="media/agentspace-promo.mp4" type="video/mp4">
+            </video>
+          </div>
+          <p class="v-cap" data-t="aV">60-second tour · English voiceover</p>
+        </div>
+      </div>
+      <div class="strip">
+        <button class="shot" type="button" data-full="media/as-14.webp"><img src="media/as-14.webp" alt="Pixel-art office where each cat is an AI agent" loading="lazy" width="1280" height="720"><b data-t="s1">The office</b><span data-t="s1d">Every cat is an agent. Every room is a role.</span></button>
+        <button class="shot" type="button" data-full="media/as-26.webp"><img src="media/as-26.webp" alt="AgentSpace team cards: manager, research, development, review, memory and Claude worker" loading="lazy" width="1280" height="720"><b data-t="s2">The team</b><span data-t="s2d">One manager, five specialists.</span></button>
+        <button class="shot" type="button" data-full="media/as-34.webp"><img src="media/as-34.webp" alt="Model routing: small jobs to a small model, hard jobs to a strong model" loading="lazy" width="1280" height="720"><b data-t="s3">Model routing</b><span data-t="s3d">Small job, small model. Hard job, strong model.</span></button>
+        <button class="shot" type="button" data-full="media/as-office.webp"><img src="media/as-office.webp" alt="AgentSpace dashboard with task counts, the live office and the five-step work flow" loading="lazy" width="1440" height="1010"><b data-t="s4">The dashboard</b><span data-t="s4d">Live tasks, the office view and every review step.</span></button>
+      </div>
+      <div class="f-tags"><span>Python</span><span>WSL</span><span>Codex</span><span>Claude Code</span><span data-t="ft1">Task board</span><span data-t="ft2">Review gates</span><span data-t="ft3">Usage budgets</span></div>
+    </div>
+  </section>
+
+  <!-- WORK -->
+  <section id="work" class="sec">
+    <div class="sec-head"><div><span class="kicker" data-t="wK">Built for Gü-Çan Turizm</span><h2 data-t="wH">Tools I built for the business I run</h2></div><p data-t="wP">I write the requirements, direct the AI coding tools and check the result.</p></div>
+
+    <article class="project first" id="crm" style="--c:var(--ai);--t:var(--ai-t)">
+      <div class="p-info">
+        <span class="status" data-t="crmS">Internal prototype</span>
+        <h3>CRM+</h3>
+        <p class="one" data-t="crmO">Public tenders, clients and the fleet in one workspace.</p>
+        <ul class="feats">
+          <li><span class="ic"><svg class="i"><use href="#i-search"/></svg></span><span data-t="crm1">Finds tenders on EKAP and reads the PDFs</span></li>
+          <li><span class="ic"><svg class="i"><use href="#i-layers"/></svg></span><span data-t="crm2">Checks hard requirements before scoring</span></li>
+          <li><span class="ic"><svg class="i"><use href="#i-hand"/></svg></span><span data-t="crm3">A person makes the final bid decision</span></li>
+          <li><span class="ic"><svg class="i"><use href="#i-route"/></svg></span><span data-t="crm4">Routes, vehicles, drivers and costs</span></li>
+        </ul>
+        <p class="stack">React · TypeScript · Next.js · Gmail · Drive · Sheets</p>
+      </div>
+      <div>
+        <div class="tabs" role="tablist" aria-label="CRM+">
+          <button type="button" role="tab" aria-selected="true" data-shot="0" data-t="tab0">Today</button>
+          <button type="button" role="tab" aria-selected="false" data-shot="1" data-t="tab1">Tender decision</button>
+          <button type="button" role="tab" aria-selected="false" data-shot="2" data-t="tab2">Operations</button>
+        </div>
+        <div class="frame">
+          <div class="frame-bar"><i></i><i></i><i></i><span id="shotUrl">crm / today</span></div>
+          <img id="shotImg" src="media/crm-today.webp" alt="CRM+ Today screen" width="1440" height="960" data-zoom>
+        </div>
+        <p class="cap"><b data-t="demo">Demo data</b><span id="shotCap"></span></p>
+      </div>
+    </article>
+
+    <article class="project" id="site" style="--c:var(--sales);--t:var(--sales-t)">
+      <div class="p-info">
+        <span class="status" data-t="webS">Live</span>
+        <h3>gucanturizm.com.tr</h3>
+        <p class="one" data-t="webO">The company website, built and launched with AI coding tools.</p>
+        <ul class="feats">
+          <li><span class="ic"><svg class="i"><use href="#i-sheet"/></svg></span><span data-t="web1">Quote requests go to Sheets and email</span></li>
+          <li><span class="ic"><svg class="i"><use href="#i-lock"/></svg></span><span data-t="web2">Bot protection and security headers</span></li>
+          <li><span class="ic"><svg class="i"><use href="#i-mail"/></svg></span><span data-t="web3">SPF, DKIM and DMARC for company email</span></li>
+        </ul>
+        <p class="stack">Next.js · Cloudflare · Apps Script</p>
+        <a class="btn" href="https://gucanturizm.com.tr" target="_blank" rel="noopener" style="align-self:flex-start"><span data-t="webB">Visit the site</span> <svg class="i" width="16" height="16"><use href="#i-link"/></svg></a>
+      </div>
+      <div class="frame">
+        <div class="frame-bar"><i></i><i></i><i></i><span>gucanturizm.com.tr</span></div>
+        <img src="media/website.webp" alt="Gü-Çan Turizm homepage" width="1440" height="900" loading="lazy" data-zoom>
+      </div>
+    </article>
+  </section>
+
+  <!-- TOOLKIT -->
+  <section id="kit" class="sec">
+    <div class="sec-head"><div><span class="kicker" data-t="kK">Toolkit</span><h2 data-t="kH">Tools I use every day</h2></div><p data-t="kP">Grouped with the same colours as the journey.</p></div>
+    <div class="kit">
+      <div class="card" style="--c:var(--sales);--t:var(--sales-t)"><h3><span class="ic"><svg class="i"><use href="#i-target"/></svg></span><span data-t="k1">Sell</span></h3><div class="chips"><span class="tag">Salesforce</span><span class="tag">HubSpot</span><span class="tag">Pipedrive</span><span class="tag">Kommo</span><span class="tag">Apollo</span><span class="tag" data-t="kt1">LinkedIn prospecting</span></div></div>
+      <div class="card" style="--c:var(--ops);--t:var(--ops-t)"><h3><span class="ic"><svg class="i"><use href="#i-route"/></svg></span><span data-t="k2">Run</span></h3><div class="chips"><span class="tag" data-t="kt2">EKAP tenders</span><span class="tag">Microsoft 365</span><span class="tag">Excel</span><span class="tag">PowerPoint</span><span class="tag">Slack</span><span class="tag">Coda</span><span class="tag" data-t="kt3">KPI reporting</span></div></div>
+      <div class="card" style="--c:var(--ai);--t:var(--ai-t)"><h3><span class="ic"><svg class="i"><use href="#i-rocket"/></svg></span><span data-t="k3">Build</span></h3><div class="chips"><span class="tag">Claude Code</span><span class="tag">Codex</span><span class="tag">ChatGPT</span><span class="tag" data-t="kt4">Multi-agent workflows</span><span class="tag">Apps Script</span><span class="tag">TypeScript</span><span class="tag">Python</span><span class="tag">Git</span></div></div>
+    </div>
+    <div class="extra">
+      <div class="card"><span class="ic"><svg class="i"><use href="#i-cap"/></svg></span><p><b data-t="e1">Bilkent University</b><span data-t="e1d">BSc Business Information Management</span></p></div>
+      <div class="card"><span class="ic"><svg class="i"><use href="#i-globe"/></svg></span><p><b data-t="e2">Worked abroad</b><span data-t="e2d">General Manager in New Zealand</span></p></div>
+      <div class="card"><span class="ic"><svg class="i"><use href="#i-music"/></svg></span><p><b data-t="e3">Off the clock</b><span data-t="e3d">Bass, guitar and drums; managed a rock band</span></p></div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="card end">
+    <div>
+      <span class="kicker" data-t="nav4">Contact</span>
+      <h2 data-t="endH">Let's talk about your team.</h2>
+      <p data-t="endP">Open to account management, business development, customer success and partner roles in B2B software, CRM and AI-enabled services.</p>
+    </div>
+    <div class="acts">
+      <button class="btn solid" type="button" data-copy><svg class="i" width="18" height="18"><use href="#i-copy"/></svg><span data-t="copy">Copy email</span></button>
+      <a class="btn" href="https://www.linkedin.com/in/yilmazcan-sayin" target="_blank" rel="noopener">LinkedIn <svg class="i" width="16" height="16"><use href="#i-link"/></svg></a>
+      <a class="btn" href="tel:+905344404405"><svg class="i" width="17" height="17"><use href="#i-phone"/></svg>+90 534 440 44 05</a>
+      <span class="mail" id="mailText">sayin.yilmazcan@gmail.com</span>
+    </div>
+  </section>
+  <footer><span>Yılmazcan Sayın · Ankara, Türkiye</span><span data-t="upd">Updated October 2026</span></footer>
+</div>
+
+<div class="lb" id="lb" hidden><button type="button" aria-label="Close">×</button><img id="lbImg" alt=""></div>
+
+<script>
+(function () {
+  /* ================= Copy (EN / TR) ================= */
+  var T = {
+    en: {
+      nav1: 'Journey', nav2: 'Results', nav3: 'Work', nav4: 'Contact',
+      heroK: 'Account management · Business development', heroSoft: 'sells, manages and builds.',
+      heroLead: 'B2B software sales and public-sector accounts, plus <b>AI-built tools</b> that make the work faster.',
+      copy: 'Copy email', copied: 'Copied', selected: 'Selected below',
+      gH: 'At a glance', g1k: 'Now', g1: 'Business Development & Operations Manager at Gü-Çan Turizm',
+      g2k: 'Sales', g2: 'B2B software and CRM sales at Mikrogrup, Kommo and Vidco',
+      g3k: 'Abroad', g3: 'General Manager in New Zealand hospitality',
+      g4k: 'Builds', g4: 'CRM+, the company website and AgentSpace, made with AI',
+      g5k: 'Education', g5: 'Bilkent University, Business Information Management',
+      ncOpen: 'Open to new roles', here: 'Currently working here',
+      jK: 'Career journey', jH: 'Scroll down through my career', jP: 'From university to today, one stop at a time.',
+      lgS: 'Sales & accounts', lgO: 'Operations & leadership', lgA: 'AI builds', lgE: 'Education',
+      rK: 'Results', rH: 'What the work added up to', rP: 'Every mark in these pictures is one real unit.',
+      r1u: 'months', r1: '<b>TCDD contract</b>, with tender preparation led by me. One square, one month.',
+      r2u: '/ month', r2: '<b>New customers</b> acquired and onboarded at Mikrogrup.',
+      r3u: 'people', r3: '<b>Team led</b> in New Zealand, serving 50–100 guests.',
+      r4u: 'tests', r4: '<b>Automated tests</b> behind the CRM+ workspace I specified.',
+      cK: 'Sales cycle', cH: 'From first call to renewal', cP: 'The stages I owned in each role.', role: 'Role',
+      stages: ['Research', 'Qualify', 'Demo', 'Propose', 'Close', 'Onboard & deliver', 'Retain & grow'],
+      aK: 'Personal project · AI', aH: 'AgentSpace, my AI office',
+      aL: 'A team of AI agents that plans, builds and double-checks real work. I designed how they work together.',
+      a1: 'One manager agent and five specialists', a2: 'The right model and effort for each task', a3: 'Independent review before anything is accepted', a4: 'A second-brain knowledge base as memory',
+      aV: '60-second tour · English voiceover',
+      s1: 'The office', s1d: 'Every cat is an agent. Every room is a role.', s2: 'The team', s2d: 'One manager, five specialists.',
+      s3: 'Model routing', s3d: 'Small job, small model. Hard job, strong model.', s4: 'The dashboard', s4d: 'Live tasks, the office view and every review step.',
+      ft1: 'Task board', ft2: 'Review gates', ft3: 'Usage budgets',
+      wK: 'Built for Gü-Çan Turizm', wH: 'Tools I built for the business I run', wP: 'I write the requirements, direct the AI coding tools and check the result.',
+      crmS: 'Internal prototype', crmO: 'Public tenders, clients and the fleet in one workspace.',
+      crm1: 'Finds tenders on EKAP and reads the PDFs', crm2: 'Checks hard requirements before scoring', crm3: 'A person makes the final bid decision', crm4: 'Routes, vehicles, drivers and costs',
+      tab0: 'Today', tab1: 'Tender decision', tab2: 'Operations', demo: 'Demo data',
+      cap0: 'Tenders waiting for a decision, data freshness and upcoming deadlines.',
+      cap1: 'Hard requirements first, then open questions, a score out of 100 and a cost check. A person decides.',
+      cap2: 'Today’s routes, vehicles, drivers and departure times.',
+      webS: 'Live', webO: 'The company website, built and launched with AI coding tools.',
+      web1: 'Quote requests go to Sheets and email', web2: 'Bot protection and security headers', web3: 'SPF, DKIM and DMARC for company email', webB: 'Visit the site',
+      kK: 'Toolkit', kH: 'Tools I use every day', kP: 'Grouped with the same colours as the journey.',
+      k1: 'Sell', k2: 'Run', k3: 'Build', kt1: 'LinkedIn prospecting', kt2: 'EKAP tenders', kt3: 'KPI reporting', kt4: 'Multi-agent workflows',
+      e1: 'Bilkent University', e1d: 'BSc Business Information Management', e2: 'Worked abroad', e2d: 'General Manager in New Zealand', e3: 'Off the clock', e3d: 'Bass, guitar and drums; managed a rock band',
+      endH: 'Let’s talk about your team.',
+      endP: 'Open to account management, business development, customer success and partner roles in B2B software, CRM and AI-enabled services.',
+      upd: 'Updated October 2026', present: 'today'
+    },
+    tr: {
+      nav1: 'Yolculuk', nav2: 'Sonuçlar', nav3: 'İşler', nav4: 'İletişim',
+      heroK: 'Müşteri yönetimi · İş geliştirme', heroSoft: 'satar, yönetir, üretir.',
+      heroLead: 'B2B yazılım satışı ve kamu müşterileri; üstüne işi hızlandıran, <b>yapay zekâ ile geliştirdiğim araçlar</b>.',
+      copy: 'E-postayı kopyala', copied: 'Kopyalandı', selected: 'Aşağıda seçildi',
+      gH: 'Kısaca ben', g1k: 'Şu an', g1: 'Gü-Çan Turizm’de İş Geliştirme ve Operasyon Müdürü',
+      g2k: 'Satış', g2: 'Mikrogrup, Kommo ve Vidco’da B2B yazılım ve CRM satışı',
+      g3k: 'Yurt dışı', g3: 'Yeni Zelanda’da ağırlama sektöründe Genel Müdür',
+      g4k: 'Projeler', g4: 'CRM+, şirket sitesi ve AgentSpace; yapay zekâ ile geliştirildi',
+      g5k: 'Eğitim', g5: 'Bilkent Üniversitesi, İşletme Bilgi Yönetimi',
+      ncOpen: 'Yeni rollere açığım', here: 'Şu an burada çalışıyorum',
+      jK: 'Kariyer yolculuğu', jH: 'Kariyerimi aşağı kaydırarak izleyin', jP: 'Üniversiteden bugüne, durak durak.',
+      lgS: 'Satış ve müşteri yönetimi', lgO: 'Operasyon ve liderlik', lgA: 'Yapay zekâ projeleri', lgE: 'Eğitim',
+      rK: 'Sonuçlar', rH: 'Emeğin somut karşılığı', rP: 'Görsellerdeki her işaret gerçek bir birimi gösterir.',
+      r1u: 'ay', r1: 'İhale hazırlığını yürüttüğüm <b>TCDD sözleşmesi</b>. Her kare bir ay.',
+      r2u: '/ ay', r2: 'Mikrogrup’ta her ay kazanılan ve sisteme alınan <b>yeni müşteri</b>.',
+      r3u: 'kişi', r3: 'Yeni Zelanda’da <b>yönettiğim ekip</b>; 50–100 misafire hizmet.',
+      r4u: 'test', r4: 'Tasarladığım CRM+ çalışma alanının <b>otomatik testleri</b>.',
+      cK: 'Satış döngüsü', cH: 'İlk görüşmeden yenilemeye', cP: 'Her rolde üstlendiğim aşamalar.', role: 'Rol',
+      stages: ['Araştırma', 'Nitelendirme', 'Demo', 'Teklif', 'Sözleşme', 'Kurulum ve teslim', 'Elde tutma ve büyütme'],
+      aK: 'Kişisel proje · Yapay zekâ', aH: 'AgentSpace, yapay zekâ ofisim',
+      aL: 'Gerçek işleri planlayan, geliştiren ve iki kez kontrol eden bir yapay zekâ ajan ekibi. Birlikte nasıl çalışacaklarını ben tasarladım.',
+      a1: 'Bir yönetici ajan ve beş uzman', a2: 'Her işe doğru model ve doğru efor', a3: 'Kabulden önce bağımsız inceleme', a4: 'Hafıza olarak ikinci beyin bilgi tabanı',
+      aV: '60 saniyelik tanıtım · İngilizce seslendirme',
+      s1: 'Ofis', s1d: 'Her kedi bir ajan, her oda bir rol.', s2: 'Ekip', s2d: 'Bir yönetici, beş uzman.',
+      s3: 'Model yönlendirme', s3d: 'Küçük işe küçük model, zor işe güçlü model.', s4: 'Kontrol paneli', s4d: 'Canlı görevler, ofis görünümü ve tüm inceleme adımları.',
+      ft1: 'Görev panosu', ft2: 'İnceleme kapıları', ft3: 'Kullanım bütçeleri',
+      wK: 'Gü-Çan Turizm için', wH: 'Yönettiğim işletme için geliştirdiğim araçlar', wP: 'Gereksinimleri yazarım, yapay zekâ kodlama araçlarını yönlendiririm ve sonucu kontrol ederim.',
+      crmS: 'Şirket içi prototip', crmO: 'Kamu ihaleleri, müşteriler ve filo tek çalışma alanında.',
+      crm1: 'EKAP’ta ihaleleri bulur, PDF’leri okur', crm2: 'Puanlamadan önce zorunlu şartları kontrol eder', crm3: 'Son teklif kararını insan verir', crm4: 'Hatlar, araçlar, sürücüler ve maliyetler',
+      tab0: 'Bugün', tab1: 'İhale kararı', tab2: 'Operasyon', demo: 'Demo veri',
+      cap0: 'Karar bekleyen ihaleler, veri tazeliği ve yaklaşan son tarihler.',
+      cap1: 'Önce zorunlu şartlar, sonra açık sorular, 100 üzerinden puan ve maliyet kontrolü. Kararı insan verir.',
+      cap2: 'Günün hatları, araçları, sürücüleri ve kalkış saatleri.',
+      webS: 'Yayında', webO: 'Yapay zekâ kodlama araçlarıyla geliştirip yayına aldığım şirket sitesi.',
+      web1: 'Teklif talepleri Sheets’e ve e-postaya düşer', web2: 'Bot koruması ve güvenlik başlıkları', web3: 'Kurumsal e-posta için SPF, DKIM ve DMARC', webB: 'Siteyi ziyaret et',
+      kK: 'Araçlar', kH: 'Her gün kullandığım araçlar', kP: 'Yolculuktaki renklerle gruplandı.',
+      k1: 'Satış', k2: 'Operasyon', k3: 'Geliştirme', kt1: 'LinkedIn ile müşteri arama', kt2: 'EKAP ihaleleri', kt3: 'KPI raporlama', kt4: 'Çoklu ajan akışları',
+      e1: 'Bilkent Üniversitesi', e1d: 'İşletme Bilgi Yönetimi, lisans', e2: 'Yurt dışı deneyimi', e2d: 'Yeni Zelanda’da Genel Müdür', e3: 'İş dışında', e3d: 'Bas gitar, gitar ve davul; bir rock grubunu yönettim',
+      endH: 'Ekibiniz hakkında konuşalım.',
+      endP: 'B2B yazılım, CRM ve yapay zekâ destekli hizmetlerde müşteri yönetimi, iş geliştirme, müşteri başarısı ve iş ortaklığı rollerine açığım.',
+      upd: 'Güncelleme: Ekim 2026', present: 'bugün'
+    }
+  };
+
+  /* ================= Journey (from CV) ================= */
+  var K = { s: ['var(--sales)', 'var(--sales-t)'], o: ['var(--ops)', 'var(--ops-t)'], a: ['var(--ai)', 'var(--ai-t)'], e: ['var(--edu)', 'var(--edu-t)'] };
+  var J = [
+    { k: 'e', ic: 'cap', y: '2014', co: { en: 'Bilkent University', tr: 'Bilkent Üniversitesi' }, t: { en: 'BSc, Business Information Management', tr: 'İşletme Bilgi Yönetimi, lisans' }, m: { en: 'Ankara · 2014 – 2020', tr: 'Ankara · 2014 – 2020' }, w: { en: ['Business', 'Information systems'], tr: ['İşletme', 'Bilgi sistemleri'] } },
+    { k: 's', ic: 'search', y: '2017', co: { en: 'Microsoft', tr: 'Microsoft' }, t: { en: 'Sales & Marketing Intern', tr: 'Satış ve Pazarlama Stajyeri' }, m: { en: 'Jun – Sep 2017', tr: 'Haz – Eyl 2017' }, w: { en: ['Prospect research', 'CRM data quality', 'Government & MENA accounts'], tr: ['Potansiyel müşteri araştırması', 'CRM veri kalitesi', 'Kamu ve MENA müşterileri'] } },
+    { k: 's', ic: 'mega', y: '2019', co: { en: 'Zeo Agency', tr: 'Zeo Agency' }, t: { en: 'Business Development Analyst', tr: 'İş Geliştirme Analisti' }, m: { en: 'Feb – Oct 2019', tr: 'Şub – Eki 2019' }, w: { en: ['Market research', 'Targeted outreach', 'Proposals', 'Client presentations'], tr: ['Pazar araştırması', 'Hedefli iletişim', 'Teklifler', 'Müşteri sunumları'] } },
+    { k: 's', ic: 'users', y: '2020', co: { en: 'Mikrogrup', tr: 'Mikrogrup' }, t: { en: 'Account Executive', tr: 'Kurumsal Satış Temsilcisi' }, m: { en: 'Ankara · Nov 2020 – Aug 2022', tr: 'Ankara · Kas 2020 – Ağu 2022' }, w: { en: ['50+ new customers a month', 'Consultative sales', 'Retention & expansion'], tr: ['Ayda 50+ yeni müşteri', 'Danışmanlık odaklı satış', 'Elde tutma ve büyütme'] } },
+    { move: true, ic: 'plane', label: { en: 'Moved to New Zealand', tr: 'Yeni Zelanda’ya taşındım' } },
+    { k: 'o', ic: 'home', y: '2023', co: { en: 'Caravanserai', tr: 'Caravanserai' }, t: { en: 'General Manager', tr: 'Genel Müdür' }, m: { en: 'New Zealand · Jun 2023 – Aug 2024', tr: 'Yeni Zelanda · Haz 2023 – Ağu 2024' }, w: { en: ['10+ person team', '50–100 guests', 'Suppliers & financial controls'], tr: ['10+ kişilik ekip', '50–100 misafir', 'Tedarikçiler ve mali kontrol'] } },
+    { move: true, ic: 'plane', label: { en: 'Back to Ankara', tr: 'Ankara’ya döndüm' } },
+    { k: 'o', ic: 'bus', y: '2024', now: true, co: { en: 'Gü-Çan Turizm', tr: 'Gü-Çan Turizm' }, t: { en: 'Business Development & Operations Manager', tr: 'İş Geliştirme ve Operasyon Müdürü' }, m: { en: 'Ankara · Sep 2024 – today', tr: 'Ankara · Eyl 2024 – bugün' }, w: { en: ['3-year TCDD contract', 'TCDD · Başkent University · Gendarmerie', 'Tenders & contracts'], tr: ['3 yıllık TCDD sözleşmesi', 'TCDD · Başkent Üniversitesi · Jandarma', 'İhaleler ve sözleşmeler'] } },
+    { k: 's', ic: 'chat', y: '2025', co: { en: 'Kommo', tr: 'Kommo' }, t: { en: 'Sales Representative (contract)', tr: 'Satış Temsilcisi (sözleşmeli)' }, m: { en: 'International SaaS · Jul 2025 – Mar 2026', tr: 'Uluslararası SaaS · Tem 2025 – Mar 2026' }, w: { en: ['CRM demos', 'Qualification', 'Pipeline & follow-up'], tr: ['CRM demoları', 'Nitelendirme', 'Pipeline ve takip'] } },
+    { k: 's', ic: 'doc', y: '2026', co: { en: 'Vidco Yazılım', tr: 'Vidco Yazılım' }, t: { en: 'Account Manager', tr: 'Müşteri Yöneticisi' }, m: { en: 'Ankara · Feb – Jul 2026', tr: 'Ankara · Şub – Tem 2026' }, w: { en: ['ISO 17020 / NDT software', 'Demos & proposals', 'Contract talks'], tr: ['ISO 17020 / NDT yazılımı', 'Demo ve teklifler', 'Sözleşme görüşmeleri'] } },
+    { k: 'a', ic: 'spark', y: '2026', co: { en: 'AI builds', tr: 'Yapay zekâ projeleri' }, t: { en: 'Built three AI-assisted tools', tr: 'Yapay zekâ ile üç araç geliştirdim' }, m: { en: 'With Claude Code and Codex', tr: 'Claude Code ve Codex ile' }, links: [['#site', { en: 'Company website', tr: 'Şirket sitesi' }], ['#crm', { en: 'CRM+', tr: 'CRM+' }], ['#agentspace', { en: 'AgentSpace', tr: 'AgentSpace' }]] }
+  ];
+
+  var lang = 'en';
+  function esc(s) { return String(s).replace(/&/g, '&amp;').replace(/</g, '&lt;'); }
+
+  function renderJourney() {
+    var side = 0, h = '';
+    J.forEach(function (s) {
+      if (s.move) { h += '<div class="move"><span class="node"><svg class="i"><use href="#i-' + s.ic + '"/></svg></span><span>' + esc(s.label[lang]) + '</span></div>'; return; }
+      var cls = (side++ % 2 ? 'r' : 'l') + (s.now ? ' now' : '');
+      var here = s.now ? '<span class="here"><svg class="i"><use href="#i-pin"/></svg>' + esc(T[lang].here) + '</span>' : '';
+      var finger = s.now ? '<span class="finger" aria-hidden="true"><svg class="i"><use href="#i-point"/></svg></span>' : '';
+      var tags = s.links ? s.links.map(function (l) { return '<a class="tag" href="' + l[0] + '">' + esc(l[1][lang]) + ' →</a>'; }).join('')
+                         : s.w[lang].map(function (x) { return '<span class="tag">' + esc(x) + '</span>'; }).join('');
+      h += '<div class="stopx ' + cls + '" style="--c:' + K[s.k][0] + ';--t:' + K[s.k][1] + '">' +
+        '<div class="when">' + (cls.charAt(0) === 'l' ? finger + s.y : s.y + finger) + '</div>' +
+        '<span class="node"><svg class="i"><use href="#i-' + s.ic + '"/></svg></span>' +
+        '<div class="box">' + here + '<div class="co"' + (s.co.en === s.co.tr ? ' lang="en"' : '') + '>' + esc(s.co[lang]) + '</div><h3>' + esc(s.t[lang]) + '</h3><p class="meta">' + esc(s.m[lang]) + '</p><div class="tags">' + tags + '</div></div></div>';
+    });
+    document.getElementById('tlItems').innerHTML = h;
+    onScroll();
+  }
+
+  /* scroll-driven progress: the line fills and stops light up as they reach the middle of the screen */
+  var tl = document.getElementById('tl'), fill = document.getElementById('tlFill');
+  function onScroll() {
+    var r = tl.getBoundingClientRect(), vh = window.innerHeight || 800, mark = vh * 0.6;
+    var p = Math.max(0, Math.min(r.height, mark - r.top));
+    fill.style.height = p + 'px';
+    var stopsEls = tl.querySelectorAll('.stopx'), last = null;
+    stopsEls.forEach(function (el) {
+      var n = el.querySelector('.node').getBoundingClientRect();
+      var on = n.top + n.height / 2 < mark;
+      el.classList.toggle('reached', on);
+      el.classList.remove('current');
+      if (on) last = el;
+    });
+    if (last) last.classList.add('current');
+  }
+
+  window.addEventListener('scroll', onScroll, { passive: true });
+  window.addEventListener('resize', onScroll);
+
+  /* ================= Results pictures ================= */
+  function grid(id, n, step) { var h = ''; for (var k = 0; k < n; k++) h += '<i style="animation-delay:' + k * step + 'ms"></i>'; document.getElementById(id).innerHTML = h; }
+  grid('g1', 36, 16); grid('g2', 50, 10); grid('g4', 33, 18);
+  var body = '<circle cx="11" cy="6" r="5"/><path d="M2 30c0-8 4-13 9-13s9 5 9 13z"/>';
+  var crew = '';
+  for (var q = 0; q < 10; q++) crew += '<svg viewBox="0 0 22 30" style="animation-delay:' + q * 40 + 'ms">' + body + '</svg>';
+  document.getElementById('g3').innerHTML = '<svg class="lead" viewBox="0 0 22 30">' + body + '</svg><span class="crew">' + crew + '</span>';
+
+  /* ================= Sales cycle ================= */
+  var stageIcons = ['search', 'target', 'screen', 'pen', 'hand', 'rocket', 'heart'];
+  var roles = [
+    { n: 'Microsoft', y: '2017', k: 's', on: [0] },
+    { n: 'Zeo Agency', y: '2019', k: 's', on: [0, 1, 2, 3] },
+    { n: 'Mikrogrup', y: '2020–22', k: 's', on: [1, 3, 4, 5, 6] },
+    { n: 'Gü-Çan Turizm', y: '2024 →', k: 'o', on: [3, 4, 5, 6] },
+    { n: 'Kommo', y: '2025–26', k: 's', on: [1, 2] },
+    { n: 'Vidco', y: '2026', k: 's', on: [1, 2, 3, 4] }
+  ];
+  function renderCycle() {
+    var st = T[lang].stages, h = '<div class="h corner">' + T[lang].role + '</div>';
+    st.forEach(function (s, k) { h += '<div class="h' + (k === 0 ? ' first' : '') + '"><span class="bub"><svg class="i"><use href="#i-' + stageIcons[k] + '"/></svg></span>' + s + '</div>'; });
+    roles.forEach(function (r) {
+      var sty = 'style="--c:' + K[r.k][0] + ';--t:' + K[r.k][1] + '"';
+      h += '<div class="co" ' + sty + '><i></i><span>' + r.n + '<small>' + r.y + '</small></span></div>';
+      st.forEach(function (s, k) { var yes = r.on.indexOf(k) > -1; h += '<div class="cell' + (yes ? '' : ' no') + '" ' + sty + ' aria-label="' + s + ': ' + (yes ? '✓' : '–') + '"><span></span></div>'; });
+    });
+    document.getElementById('cyc').innerHTML = h;
+  }
+
+  /* ================= CRM+ tabs ================= */
+  var shots = [
+    { src: 'media/crm-today.webp', url: 'crm / today', w: 1440, h: 960 },
+    { src: 'media/crm-tender-detail.webp', url: 'crm / tenders / detail', w: 1440, h: 960 },
+    { src: 'media/crm-ops.webp', url: 'crm / operations', w: 1440, h: 1000 }
+  ];
+  var curShot = 0, tabs = document.querySelectorAll('[data-shot]');
+  function showShot(i) {
+    curShot = i;
+    var s = shots[i], img = document.getElementById('shotImg');
+    tabs.forEach(function (x) { x.setAttribute('aria-selected', +x.getAttribute('data-shot') === i ? 'true' : 'false'); });
+    img.src = s.src; img.width = s.w; img.height = s.h; img.alt = 'CRM+ · ' + T[lang]['tab' + i];
+    document.getElementById('shotUrl').textContent = s.url;
+    document.getElementById('shotCap').textContent = T[lang]['cap' + i];
+  }
+  tabs.forEach(function (b) { b.addEventListener('click', function () { showShot(+b.getAttribute('data-shot')); }); });
+  shots.forEach(function (s) { new Image().src = s.src; });
+
+  /* ================= Language switch ================= */
+  function setLang(l) {
+    lang = T[l] ? l : 'en';
+    document.documentElement.lang = lang;
+    document.querySelectorAll('[data-t]').forEach(function (el) { var v = T[lang][el.getAttribute('data-t')]; if (typeof v === 'string') el.textContent = v; });
+    document.querySelectorAll('[data-h]').forEach(function (el) { var v = T[lang][el.getAttribute('data-h')]; if (typeof v === 'string') el.innerHTML = v; });
+    document.querySelectorAll('[data-lang]').forEach(function (b) { b.setAttribute('aria-pressed', b.getAttribute('data-lang') === lang ? 'true' : 'false'); });
+    renderJourney(); renderCycle(); showShot(curShot);
+    try { localStorage.setItem('ys-lang', lang); } catch (e) {}
+  }
+  document.querySelectorAll('[data-lang]').forEach(function (b) { b.addEventListener('click', function () { setLang(b.getAttribute('data-lang')); }); });
+  var start = 'en';
+  try { start = localStorage.getItem('ys-lang') || ((navigator.language || '').toLowerCase().indexOf('tr') === 0 ? 'tr' : 'en'); } catch (e) {}
+  setLang(start);
+
+  /* ================= Lightbox ================= */
+  var lb = document.getElementById('lb'), lbImg = document.getElementById('lbImg');
+  function open(src, alt) { lbImg.src = src; lbImg.alt = alt || ''; lb.hidden = false; lb.querySelector('button').focus(); }
+  function close() { lb.hidden = true; lbImg.src = ''; }
+  document.querySelectorAll('[data-full]').forEach(function (b) { b.addEventListener('click', function () { open(b.getAttribute('data-full'), b.querySelector('img').alt); }); });
+  document.querySelectorAll('img[data-zoom]').forEach(function (im) { im.addEventListener('click', function () { open(im.currentSrc || im.src, im.alt); }); });
+  lb.addEventListener('click', close);
+  document.addEventListener('keydown', function (e) { if (e.key === 'Escape' && !lb.hidden) close(); });
+
+  /* ================= Copy email ================= */
+  document.querySelectorAll('[data-copy]').forEach(function (btn) {
+    var label = btn.querySelector('span');
+    btn.addEventListener('click', function () {
+      function done(m) { label.textContent = m; setTimeout(function () { label.textContent = T[lang].copy; }, 1600); }
+      function fallback() { var r = document.createRange(); r.selectNodeContents(document.getElementById('mailText')); var s = window.getSelection(); s.removeAllRanges(); s.addRange(r); done(T[lang].selected); }
+      try { navigator.clipboard.writeText('sayin.yilmazcan@gmail.com').then(function () { done(T[lang].copied); }, fallback); } catch (e) { fallback(); }
+    });
+  });
+})();
+</script>
+</body>
+</html>
