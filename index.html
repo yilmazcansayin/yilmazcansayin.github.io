@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>Yılmazcan Sayın · Account Management & Business Development</title>
-<meta name="description" content="Account management and business development in B2B software, CRM and public-sector services, plus AI-built tools like CRM+ and AgentSpace. Based in Ankara.">
+<meta name="description" content="Account management and business development in B2B software, CRM and public-sector services, plus AI-built products like the Kurgu video editor, Anlık Capture Studio and AgentSpace. Based in Ankara.">
 <meta name="author" content="Yılmazcan Sayın">
 <meta name="theme-color" content="#f6f7fb" media="(prefers-color-scheme: light)">
 <meta name="theme-color" content="#0f141d" media="(prefers-color-scheme: dark)">
@@ -12,7 +12,7 @@
 <link rel="icon" href="favicon.svg" type="image/svg+xml">
 <meta property="og:type" content="profile">
 <meta property="og:title" content="Yılmazcan Sayın">
-<meta property="og:description" content="Account management and business development in B2B software, CRM and public-sector services, plus AI-built tools like CRM+ and AgentSpace. Based in Ankara.">
+<meta property="og:description" content="Account management and business development in B2B software, CRM and public-sector services, plus AI-built products like the Kurgu video editor, Anlık Capture Studio and AgentSpace. Based in Ankara.">
 <meta property="og:image" content="https://yilmazcansayin.github.io/media/og.png">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
@@ -21,7 +21,7 @@
 <meta property="og:url" content="https://yilmazcansayin.github.io/">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="Yılmazcan Sayın">
-<meta name="twitter:description" content="Account management and business development in B2B software, CRM and public-sector services, plus AI-built tools like CRM+ and AgentSpace. Based in Ankara.">
+<meta name="twitter:description" content="Account management and business development in B2B software, CRM and public-sector services, plus AI-built products like the Kurgu video editor, Anlık Capture Studio and AgentSpace. Based in Ankara.">
 <meta name="twitter:image" content="https://yilmazcansayin.github.io/media/og.png">
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"Person","name":"Yılmazcan Sayın","jobTitle":"Business Development & Operations Manager","worksFor":{"@type":"Organization","name":"Gü-Çan Turizm","url":"https://gucanturizm.com.tr"},"alumniOf":{"@type":"CollegeOrUniversity","name":"Bilkent University"},"address":{"@type":"PostalAddress","addressLocality":"Ankara","addressCountry":"TR"},"email":"mailto:sayin.yilmazcan@gmail.com","telephone":"+90 534 440 44 05","sameAs":["https://www.linkedin.com/in/yilmazcan-sayin"],"knowsLanguage":["tr","en"],"url":"https://yilmazcansayin.github.io/"}</script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -45,6 +45,10 @@
   --ops-t: #faf2e4;
   --ai-t: #e4f4f1;
   --edu-t: #eef0f4;
+  --kurgu: #4a63e6;
+  --kurgu-t: #eceffd;
+  --anlik: #4d7c0f;
+  --anlik-t: #eef6dd;
   --shadow: 0 1px 2px rgba(24, 34, 58, .04), 0 14px 36px -14px rgba(24, 34, 58, .14);
   --night: #131927;
   --display: "Sora", "Segoe UI", system-ui, sans-serif;
@@ -55,7 +59,7 @@
   :root:not([data-theme="light"]) {
     --bg: #0f141d; --paper: #161d2a; --ink: #e8edf5; --muted: #9ba8ba; --rule: #263143;
     --sales: #80aaea; --ops: #e5b768; --ai: #4fc4b1; --edu: #98a3b3;
-    --sales-t: #1b2a42; --ops-t: #2e2617; --ai-t: #15312d; --edu-t: #1f2633;
+    --sales-t: #1b2a42; --ops-t: #2e2617; --ai-t: #15312d; --edu-t: #1f2633; --kurgu: #8ea0ff; --kurgu-t: #1f2442; --anlik: #a3e635; --anlik-t: #1d2711;
     --shadow: 0 1px 2px rgba(0,0,0,.3), 0 18px 40px -18px rgba(0,0,0,.65);
     --night: #0b0f17;
     color-scheme: dark;
@@ -64,7 +68,7 @@
 :root[data-theme="dark"] {
   --bg: #0f141d; --paper: #161d2a; --ink: #e8edf5; --muted: #9ba8ba; --rule: #263143;
   --sales: #80aaea; --ops: #e5b768; --ai: #4fc4b1; --edu: #98a3b3;
-  --sales-t: #1b2a42; --ops-t: #2e2617; --ai-t: #15312d; --edu-t: #1f2633;
+  --sales-t: #1b2a42; --ops-t: #2e2617; --ai-t: #15312d; --edu-t: #1f2633; --kurgu: #8ea0ff; --kurgu-t: #1f2442; --anlik: #a3e635; --anlik-t: #1d2711;
   --shadow: 0 1px 2px rgba(0,0,0,.3), 0 18px 40px -18px rgba(0,0,0,.65);
   --night: #0b0f17;
   color-scheme: dark;
@@ -252,6 +256,30 @@ a.tag:hover { text-decoration: underline; }
 .f-tags { display: flex; flex-wrap: wrap; gap: 8px; }
 .f-tags span { font: .78rem var(--mono); padding: 5px 11px; border-radius: 999px; border: 1px solid rgba(255,255,255,.14); color: #c3cad5; }
 
+/* ---------- Desktop apps (Kurgu, Anlık) ---------- */
+.apps { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 24px; align-items: start; }
+.app { overflow: hidden; display: flex; flex-direction: column; scroll-margin-top: 24px; }
+.app video { display: block; width: 100%; height: auto; aspect-ratio: 16 / 9; background: #000; }
+.app-body { padding: 24px; display: flex; flex-direction: column; gap: 18px; }
+.app-head { display: flex; align-items: center; gap: 14px; flex-wrap: wrap; }
+.app-head > div { flex: 1 1 auto; min-width: 0; }
+.app-logo { width: 46px; height: 46px; border-radius: 13px; display: grid; place-items: center; flex-shrink: 0; color: #fff; font: 700 1.2rem var(--display); }
+.app-logo.kurgu { background: linear-gradient(135deg, #5b8cff, #7c5cff); }
+.app-logo.anlik { background: #11160f; }
+.app-logo.anlik::before { content: ""; width: 16px; height: 16px; border: 4px solid #a3e635; border-radius: 3px; }
+.app-head h3 { font-size: 1.45rem; font-weight: 700; line-height: 1.15; }
+.app-head small { display: block; font-size: .9rem; color: var(--muted); }
+.app .one { color: var(--muted); }
+.app-stats { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); border: 1px solid var(--rule); border-radius: 14px; }
+.app-stats div { padding: 12px 14px; min-width: 0; }
+.app-stats div + div { border-left: 1px solid var(--rule); }
+.app-stats b { display: block; font: 600 1.35rem/1.15 var(--display); letter-spacing: -.02em; color: var(--c); white-space: nowrap; }
+.app-stats span { display: block; font-size: .8rem; color: var(--muted); line-height: 1.3; margin-top: 2px; }
+.app-shots { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 8px; }
+.app-shots button { padding: 0; border: 0; background: none; cursor: zoom-in; }
+.app-shots img { display: block; width: 100%; height: auto; aspect-ratio: 16 / 9; object-fit: cover; border-radius: 9px; border: 1px solid var(--rule); transition: transform .2s; }
+.app-shots button:hover img { transform: translateY(-2px); }
+
 /* ---------- Project rows ---------- */
 .project { display: grid; grid-template-columns: minmax(0, 360px) minmax(0, 1fr); gap: 48px; align-items: start; padding-block: 72px 0; scroll-margin-top: 24px; }
 .project.first { padding-top: 0; }
@@ -307,7 +335,7 @@ footer { padding-bottom: 40px; font-size: .85rem; color: var(--muted); display: 
 
 /* ---------- Responsive ---------- */
 @media (max-width: 980px) {
-  .hero, .f-top, .project, .sec-head { grid-template-columns: minmax(0, 1fr); }
+  .hero, .f-top, .project, .sec-head, .apps { grid-template-columns: minmax(0, 1fr); }
   .results { grid-template-columns: repeat(2, minmax(0, 1fr)); }
   .strip { grid-template-columns: repeat(2, minmax(0, 1fr)); }
   .p-info { position: static; }
@@ -381,7 +409,7 @@ footer { padding-bottom: 40px; font-size: .85rem; color: var(--muted); display: 
   <header class="top">
     <div class="brand"><span class="avatar" aria-hidden="true"><span>YS</span></span>Yılmazcan Sayın</div>
     <div class="top-r">
-      <nav aria-label="Sections"><a href="#journey" data-t="nav1">Journey</a><a href="#results" data-t="nav2">Results</a><a href="#agentspace">AgentSpace</a><a href="#work" data-t="nav3">Work</a><a href="#contact" data-t="nav4">Contact</a></nav>
+      <nav aria-label="Sections"><a href="#journey" data-t="nav1">Journey</a><a href="#results" data-t="nav2">Results</a><a href="#agentspace">AgentSpace</a><a href="#apps" data-t="nav5">Apps</a><a href="#work" data-t="nav3">Work</a><a href="#contact" data-t="nav4">Contact</a></nav>
       <div class="lang" role="group" aria-label="Language / Dil"><button type="button" data-lang="en" aria-pressed="true">EN</button><button type="button" data-lang="tr" aria-pressed="false">TR</button></div>
     </div>
   </header>
@@ -476,6 +504,43 @@ footer { padding-bottom: 40px; font-size: .85rem; color: var(--muted); display: 
     </div>
   </section>
 
+  <!-- DESKTOP APPS -->
+  <section id="apps" class="sec">
+    <div class="sec-head"><div><span class="kicker" data-t="apK">Products · AI-built</span><h2 data-t="apH">Desktop apps I built with AI</h2></div><p data-t="apP">Two Windows apps, taken from idea to working product. I set the requirements, directed the AI coding tools and checked the results.</p></div>
+    <div class="apps">
+      <article class="card app" id="kurgu" style="--c:var(--kurgu);--t:var(--kurgu-t)">
+        <video controls playsinline preload="none" poster="media/kurgu-cover.webp" width="1280" height="720" aria-label="Kurgu promo video"><source src="media/kurgu-promo.mp4" type="video/mp4"></video>
+        <div class="app-body">
+          <div class="app-head"><span class="app-logo kurgu" aria-hidden="true">K</span><div><h3>Kurgu</h3><small data-t="kgS">Desktop video editor</small></div><span class="status" data-t="kgB">Built with Claude Code</span></div>
+          <p class="one" data-t="kgO">A video editor I built from scratch. Inspired by CapCut and fully local: no account, no cloud, no subscription.</p>
+          <div class="app-stats"><div><b>57</b><span data-t="kgs1">transitions</span></div><div><b>27</b><span data-t="kgs2">effects</span></div><div><b>~91%</b><span data-t="kgs3">of CapCut’s local features</span></div></div>
+          <ul class="feats">
+            <li><span class="ic"><svg class="i"><use href="#i-layers"/></svg></span><span data-t="kg1">Multitrack timeline with a magnetic main track and keyframes</span></li>
+            <li><span class="ic"><svg class="i"><use href="#i-spark"/></svg></span><span data-t="kg2">Local AI tools: auto captions, silence removal, text-based editing</span></li>
+            <li><span class="ic"><svg class="i"><use href="#i-chat"/></svg></span><span data-t="kg3">Claude edits it command by command over MCP. Its own promo video was made that way.</span></li>
+          </ul>
+          <div class="app-shots"><button type="button" data-full="media/kurgu-13.webp"><img src="media/kurgu-13.webp" alt="Kurgu timeline with a multitrack edit" loading="lazy" width="1280" height="720"></button><button type="button" data-full="media/kurgu-37.webp"><img src="media/kurgu-37.webp" alt="Kurgu colour tools: curves, HSL and colour wheels" loading="lazy" width="1280" height="720"></button><button type="button" data-full="media/kurgu-53.webp"><img src="media/kurgu-53.webp" alt="Claude Code editing a video in Kurgu over MCP" loading="lazy" width="1280" height="720"></button></div>
+          <p class="stack">Electron · React · TypeScript · WebGL · FFmpeg · whisper.cpp · MCP</p>
+        </div>
+      </article>
+      <article class="card app" id="anlik" style="--c:var(--anlik);--t:var(--anlik-t)">
+        <video controls playsinline preload="none" poster="media/anlik-cover.webp" width="1280" height="720" aria-label="Anlık Capture Studio promo video"><source src="media/anlik-promo.mp4" type="video/mp4"></video>
+        <div class="app-body">
+          <div class="app-head"><span class="app-logo anlik" aria-hidden="true"></span><div><h3>Anlık Capture Studio</h3><small data-t="anS">Game clip recorder</small></div><span class="status" data-t="anB">Built with Codex</span></div>
+          <p class="one" data-t="anO">A game clip recorder for Windows. It keeps the last moments in memory, so one hotkey turns the past into a clip.</p>
+          <div class="app-stats"><div><b>60</b><span data-t="ans1">fps capture</span></div><div><b>1080p</b><span data-t="ans2">Full HD MP4</span></div><div><b>Alt+S</b><span data-t="ans3">saves the last minute</span></div></div>
+          <ul class="feats">
+            <li><span class="ic"><svg class="i"><use href="#i-search"/></svg></span><span data-t="an1">Detects Steam, Epic, Unity, Unreal and Godot games automatically</span></li>
+            <li><span class="ic"><svg class="i"><use href="#i-rocket"/></svg></span><span data-t="an2">GPU capture with AMD hardware encoding; saving never re-encodes</span></li>
+            <li><span class="ic"><svg class="i"><use href="#i-sheet"/></svg></span><span data-t="an3">Trim, keep game audio and mic apart, share or upload to Google Drive</span></li>
+          </ul>
+          <div class="app-shots"><button type="button" data-full="media/anlik-17.webp"><img src="media/anlik-17.webp" alt="One hotkey saves the last minute as a clip" loading="lazy" width="1280" height="720"></button><button type="button" data-full="media/anlik-29.webp"><img src="media/anlik-29.webp" alt="GPU acceleration: 60 fps, 60 Mbps, 1080p" loading="lazy" width="1280" height="720"></button><button type="button" data-full="media/anlik-33.webp"><img src="media/anlik-33.webp" alt="Anlık clip studio for trimming and sharing" loading="lazy" width="1280" height="720"></button></div>
+          <p class="stack">Electron · Node.js · FFmpeg · AMD AMF · WASAPI · Google Drive API</p>
+        </div>
+      </article>
+    </div>
+  </section>
+
   <!-- WORK -->
   <section id="work" class="sec">
     <div class="sec-head"><div><span class="kicker" data-t="wK">Built for Gü-Çan Turizm</span><h2 data-t="wH">Tools I built for the business I run</h2></div><p data-t="wP">I write the requirements, direct the AI coding tools and check the result.</p></div>
@@ -533,7 +598,7 @@ footer { padding-bottom: 40px; font-size: .85rem; color: var(--muted); display: 
     <div class="kit">
       <div class="card" style="--c:var(--sales);--t:var(--sales-t)"><h3><span class="ic"><svg class="i"><use href="#i-target"/></svg></span><span data-t="k1">Sell</span></h3><div class="chips"><span class="tag">Salesforce</span><span class="tag">HubSpot</span><span class="tag">Pipedrive</span><span class="tag">Kommo</span><span class="tag">Apollo</span><span class="tag" data-t="kt1">LinkedIn prospecting</span></div></div>
       <div class="card" style="--c:var(--ops);--t:var(--ops-t)"><h3><span class="ic"><svg class="i"><use href="#i-route"/></svg></span><span data-t="k2">Run</span></h3><div class="chips"><span class="tag" data-t="kt2">EKAP tenders</span><span class="tag">Microsoft 365</span><span class="tag">Excel</span><span class="tag">PowerPoint</span><span class="tag">Slack</span><span class="tag">Coda</span><span class="tag" data-t="kt3">KPI reporting</span></div></div>
-      <div class="card" style="--c:var(--ai);--t:var(--ai-t)"><h3><span class="ic"><svg class="i"><use href="#i-rocket"/></svg></span><span data-t="k3">Build</span></h3><div class="chips"><span class="tag">Claude Code</span><span class="tag">Codex</span><span class="tag">ChatGPT</span><span class="tag" data-t="kt4">Multi-agent workflows</span><span class="tag">Apps Script</span><span class="tag">TypeScript</span><span class="tag">Python</span><span class="tag">Git</span></div></div>
+      <div class="card" style="--c:var(--ai);--t:var(--ai-t)"><h3><span class="ic"><svg class="i"><use href="#i-rocket"/></svg></span><span data-t="k3">Build</span></h3><div class="chips"><span class="tag">Claude Code</span><span class="tag">Codex</span><span class="tag">ChatGPT</span><span class="tag" data-t="kt4">Multi-agent workflows</span><span class="tag">Apps Script</span><span class="tag">Electron</span><span class="tag">React</span><span class="tag">FFmpeg</span><span class="tag">TypeScript</span><span class="tag">Python</span><span class="tag">Git</span></div></div>
     </div>
     <div class="extra">
       <div class="card"><span class="ic"><svg class="i"><use href="#i-cap"/></svg></span><p><b data-t="e1">Bilkent University</b><span data-t="e1d">BSc Business Information Management</span></p></div>
@@ -567,13 +632,14 @@ footer { padding-bottom: 40px; font-size: .85rem; color: var(--muted); display: 
   var T = {
     en: {
       nav1: 'Journey', nav2: 'Results', nav3: 'Work', nav4: 'Contact',
+      nav5: "Apps", apK: "Products · AI-built", apH: "Desktop apps I built with AI", apP: "Two Windows apps, taken from idea to working product. I set the requirements, directed the AI coding tools and checked the results.", kgS: "Desktop video editor", kgB: "Built with Claude Code", kgO: "A video editor I built from scratch. Inspired by CapCut and fully local: no account, no cloud, no subscription.", kgs1: "transitions", kgs2: "effects", kgs3: "of CapCut’s local features", kg1: "Multitrack timeline with a magnetic main track and keyframes", kg2: "Local AI tools: auto captions, silence removal, text-based editing", kg3: "Claude edits it command by command over MCP. Its own promo video was made that way.", anS: "Game clip recorder", anB: "Built with Codex", anO: "A game clip recorder for Windows. It keeps the last moments in memory, so one hotkey turns the past into a clip.", ans1: "fps capture", ans2: "Full HD MP4", ans3: "saves the last minute", an1: "Detects Steam, Epic, Unity, Unreal and Godot games automatically", an2: "GPU capture with AMD hardware encoding; saving never re-encodes", an3: "Trim, keep game audio and mic apart, share or upload to Google Drive",
       heroK: 'Account management · Business development', heroSoft: 'sells, manages and builds.',
       heroLead: 'B2B software sales and public-sector accounts, plus <b>AI-built tools</b> that make the work faster.',
       copy: 'Copy email', copied: 'Copied', selected: 'Selected below',
       gH: 'At a glance', g1k: 'Now', g1: 'Business Development & Operations Manager at Gü-Çan Turizm',
       g2k: 'Sales', g2: 'B2B software and CRM sales at Mikrogrup, Kommo and Vidco',
       g3k: 'Abroad', g3: 'General Manager in New Zealand hospitality',
-      g4k: 'Builds', g4: 'CRM+, the company website and AgentSpace, made with AI',
+      g4k: 'Builds', g4: 'Kurgu, Anlık, AgentSpace, CRM+ and the company website, made with AI',
       g5k: 'Education', g5: 'Bilkent University, Business Information Management',
       ncOpen: 'Open to new roles', here: 'Currently working here',
       jK: 'Career journey', jH: 'Scroll down through my career', jP: 'From university to today, one stop at a time.',
@@ -610,13 +676,14 @@ footer { padding-bottom: 40px; font-size: .85rem; color: var(--muted); display: 
     },
     tr: {
       nav1: 'Yolculuk', nav2: 'Sonuçlar', nav3: 'İşler', nav4: 'İletişim',
+      nav5: "Uygulamalar", apK: "Ürünler · Yapay zekâ ile", apH: "Yapay zekâ ile geliştirdiğim masaüstü uygulamaları", apP: "Fikirden çalışan ürüne iki Windows uygulaması. Gereksinimleri belirledim, yapay zekâ kodlama araçlarını yönlendirdim ve sonuçları kontrol ettim.", kgS: "Masaüstü video editörü", kgB: "Claude Code ile geliştirildi", kgO: "Sıfırdan geliştirdiğim video editörü. CapCut’tan esinlendi ve tamamen yerel: hesap yok, bulut yok, abonelik yok.", kgs1: "geçiş", kgs2: "efekt", kgs3: "CapCut’ın yerel özellikleri", kg1: "Mıknatıslı ana izli çoklu iz zaman çizelgesi ve anahtar kareler", kg2: "Yerel yapay zekâ araçları: otomatik altyazı, sessizlik silme, metinle kurgu", kg3: "Claude, MCP üzerinden komut komut kurgulayabiliyor. Kendi tanıtım videosu da böyle hazırlandı.", anS: "Oyun klibi kaydedici", anB: "Codex ile geliştirildi", anO: "Windows için oyun klibi kaydedici. Son anları arka planda hazır tutar; tek kısayol tuşu geçmişi klibe çevirir.", ans1: "fps kayıt", ans2: "Full HD MP4", ans3: "son dakikayı kaydeder", an1: "Steam, Epic, Unity, Unreal ve Godot oyunlarını otomatik algılar", an2: "Ekran kartıyla yakalama ve AMD donanım kodlama; kaydederken yeniden kodlama yok", an3: "Kırp, oyun sesi ve mikrofonu ayrı tut, paylaş ya da Google Drive’a yükle",
       heroK: 'Müşteri yönetimi · İş geliştirme', heroSoft: 'satar, yönetir, üretir.',
       heroLead: 'B2B yazılım satışı ve kamu müşterileri; üstüne işi hızlandıran, <b>yapay zekâ ile geliştirdiğim araçlar</b>.',
       copy: 'E-postayı kopyala', copied: 'Kopyalandı', selected: 'Aşağıda seçildi',
       gH: 'Kısaca ben', g1k: 'Şu an', g1: 'Gü-Çan Turizm’de İş Geliştirme ve Operasyon Müdürü',
       g2k: 'Satış', g2: 'Mikrogrup, Kommo ve Vidco’da B2B yazılım ve CRM satışı',
       g3k: 'Yurt dışı', g3: 'Yeni Zelanda’da ağırlama sektöründe Genel Müdür',
-      g4k: 'Projeler', g4: 'CRM+, şirket sitesi ve AgentSpace; yapay zekâ ile geliştirildi',
+      g4k: 'Projeler', g4: 'Kurgu, Anlık, AgentSpace, CRM+ ve şirket sitesi; yapay zekâ ile geliştirildi',
       g5k: 'Eğitim', g5: 'Bilkent Üniversitesi, İşletme Bilgi Yönetimi',
       ncOpen: 'Yeni rollere açığım', here: 'Şu an burada çalışıyorum',
       jK: 'Kariyer yolculuğu', jH: 'Kariyerimi aşağı kaydırarak izleyin', jP: 'Üniversiteden bugüne, durak durak.',
@@ -666,7 +733,7 @@ footer { padding-bottom: 40px; font-size: .85rem; color: var(--muted); display: 
     { k: 'o', ic: 'bus', y: '2024', now: true, co: { en: 'Gü-Çan Turizm', tr: 'Gü-Çan Turizm' }, t: { en: 'Business Development & Operations Manager', tr: 'İş Geliştirme ve Operasyon Müdürü' }, m: { en: 'Ankara · Sep 2024 – today', tr: 'Ankara · Eyl 2024 – bugün' }, w: { en: ['3-year TCDD contract', 'TCDD · Başkent University · Gendarmerie', 'Tenders & contracts'], tr: ['3 yıllık TCDD sözleşmesi', 'TCDD · Başkent Üniversitesi · Jandarma', 'İhaleler ve sözleşmeler'] } },
     { k: 's', ic: 'chat', y: '2025', co: { en: 'Kommo', tr: 'Kommo' }, t: { en: 'Sales Representative (contract)', tr: 'Satış Temsilcisi (sözleşmeli)' }, m: { en: 'International SaaS · Jul 2025 – Mar 2026', tr: 'Uluslararası SaaS · Tem 2025 – Mar 2026' }, w: { en: ['CRM demos', 'Qualification', 'Pipeline & follow-up'], tr: ['CRM demoları', 'Nitelendirme', 'Pipeline ve takip'] } },
     { k: 's', ic: 'doc', y: '2026', co: { en: 'Vidco Yazılım', tr: 'Vidco Yazılım' }, t: { en: 'Account Manager', tr: 'Müşteri Yöneticisi' }, m: { en: 'Ankara · Feb – Jul 2026', tr: 'Ankara · Şub – Tem 2026' }, w: { en: ['ISO 17020 / NDT software', 'Demos & proposals', 'Contract talks'], tr: ['ISO 17020 / NDT yazılımı', 'Demo ve teklifler', 'Sözleşme görüşmeleri'] } },
-    { k: 'a', ic: 'spark', y: '2026', co: { en: 'AI builds', tr: 'Yapay zekâ projeleri' }, t: { en: 'Built three AI-assisted tools', tr: 'Yapay zekâ ile üç araç geliştirdim' }, m: { en: 'With Claude Code and Codex', tr: 'Claude Code ve Codex ile' }, links: [['#site', { en: 'Company website', tr: 'Şirket sitesi' }], ['#crm', { en: 'CRM+', tr: 'CRM+' }], ['#agentspace', { en: 'AgentSpace', tr: 'AgentSpace' }]] }
+    { k: 'a', ic: 'spark', y: '2026', co: { en: 'AI builds', tr: 'Yapay zekâ projeleri' }, t: { en: 'Built five tools with AI', tr: 'Yapay zekâ ile beş araç geliştirdim' }, m: { en: 'With Claude Code and Codex', tr: 'Claude Code ve Codex ile' }, links: [['#site', { en: 'Company website', tr: 'Şirket sitesi' }], ['#crm', { en: 'CRM+', tr: 'CRM+' }], ['#agentspace', { en: 'AgentSpace', tr: 'AgentSpace' }], ['#kurgu', { en: 'Kurgu', tr: 'Kurgu' }], ['#anlik', { en: 'Anlık', tr: 'Anlık' }]] }
   ];
 
   var lang = 'en';
